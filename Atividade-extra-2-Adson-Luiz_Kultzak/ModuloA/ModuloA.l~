@@ -1,0 +1,32 @@
+%{
+	/*Atividade2*/	
+	int qtdPreco = 0;
+%} 
+
+diacritico	[á|é|í|ó|ú|ã|õ|ê|ô|à|â|ç]
+palavra	(([a-zA-Z]|[0-9]|{diacritico})+)
+separador	(,|:)?" "
+margemE	({palavra}{separador})?
+margemD	({separador}{palavra})?
+preco	{margemE}{margemE}{margemE}{margemE}preço(s)?{margemD}{margemD}{margemD}{margemD}
+
+%%
+ 
+{preco}	{ qtdPreco++; fprintf(yyout,"# %s\n", yytext); }
+\n	;
+.	;
+
+%%
+
+int main (int nArgs, char* szArgs []){
+	int i;
+	yyout = fopen("Resultados.txt","w");
+	if(yyout==NULL)
+		printf("Erro");
+	for(i=1;i<nArgs;i++){
+		yyin = fopen(szArgs[i],"r");
+		yylex();
+	}
+	fprintf(yyout,"Quantidade de palavras preco encontradas: %d \n", qtdPreco);
+	return 0;
+}

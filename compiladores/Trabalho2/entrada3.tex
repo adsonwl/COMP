@@ -1,0 +1,64 @@
+\documentclass{article}
+
+\title{Documento teste 3}
+
+\begin{document}
+
+\paragraph{Compiler}
+A compiler is a computer program (or a set of programs) that transforms source code written in a programming language (the source language) into another computer language (the target language), with the latter often having a binary form known as object code.1 The most common reason for converting a source code is to create an executable program.
+
+The name "compiler" is primarily used for programs that translate source code from a high-level programming language to a lower level language (e.g., assembly language or machine code). If the compiled program can run on a computer whose CPU or operating system is different from the one on which the compiler runs, the compiler is known as a cross-compiler. More generally, compilers are a specific type of translator.
+
+\section{History}
+
+\subsection{Compilers in education}
+
+\section{Compilation}
+
+\subsection{Structure of a compiler}
+
+\section{References}
+
+\paragraph{History}
+
+Software for early computers was primarily written in assembly language. Although the first high level language is nearly as old as the first computer, the limited memory capacity of early computers led to substantial technical challenges when the first compilers were designed.discuss
+
+The first high-level programming language (\textit{Plankalkul}) was proposed by Konrad Zuse in 1943. The first compiler was written by Grace Hopper, in 1952, for the A-0 programming language; the A-0 functioned more as a loader or linker than the modern notion of a compiler. The first autocode and its compiler were developed by Alick Glennie in 1952 for the Mark 1 computer at the University of Manchester and is considered by some to be the first compiled programming language. The \textbf{FORTRAN} team led by John Backus at IBM is generally credited as having introduced the first complete compiler in 1957. \textbf{COBOL} was an early language to be compiled on multiple architectures, in 1960.2
+
+\paragraph{Compilers in education}
+Compiler construction and compiler optimization are taught at universities and schools as part of a computer science curriculum.4 Such courses are usually supplemented with the implementation of a compiler for an educational programming language. A well-documented example is Niklaus Wirth's PL/0 compiler, which Wirth used to teach compiler construction in the 1970s.5 In spite of its simplicity, the PL/0 compiler introduced several influential concepts to the field:
+
+    Program development by stepwise refinement (also the title of a 1971 paper by Wirth)6
+    The use of a recursive descent parser
+    The use of EBNF to specify the syntax of a language
+    A code generator producing portable P-code
+    The use of T-diagrams in the formal description of the bootstrapping problem.
+
+\paragraph{Compilation}
+Compilers enabled the development of programs that are machine-independent. Before the development of \textbf{FORTRAN}, the first higher-level language, in the 1950s, machine-dependent assembly language was widely used. While assembly language produces more abstraction than machine code on the same architecture, just as with machine code, it has to be modified or rewritten if the program is to be executed on different computer hardware architecture.
+
+With the advent of high-level programming languages that followed \textbf{FORTRAN}, such as \textbf{COBOL}, C, and BASIC, programmers could write machine-independent source programs. A compiler translates the high-level source programs into target programs in machine languages for the specific hardware. Once the target program is generated, the user can execute the program.
+
+\paragraph{Structure of a compiler}
+
+Compilers bridge source programs in high-level languages with the underlying hardware. A compiler verifies code syntax, generates efficient object code, performs run-time organization, and formats the output according to assembler and linker conventions. A compiler consists of:
+
+    The front end: Verifies syntax and semantics, and generates an intermediate representation or IR of the source code for processing by the middle-end. Performs type checking by collecting type information. Generates errors and warning, if any, in a useful way. Aspects of the front end include lexical analysis, syntax analysis, and semantic analysis.
+    The middle end: Performs optimizations, including removal of useless or unreachable code, discovery and propagation of constant values, relocation of computation to a less frequently executed place (e.g., out of a loop), or specialization of computation based on the context. Generates another IR for the backend.
+    The back end: Generates the assembly code, performing register allocation in process. (Assigns processor registers for the program variables where possible.) Optimizes target code utilization of the hardware by figuring out how to keep parallel execution units busy, filling delay slots. Although most algorithms for optimization are in NP, heuristic techniques are well-developed.
+    
+\paragraph{References}
+
+\begin{enumerate}
+
+\item Compiler textbook references A collection of references to mainstream Compiler Construction Textbooks
+
+\item Aho, Alfred V.; Sethi, Ravi; Ullman, Jeffrey D. (1986). Compilers: Principles, Techniques, and Tools (1st ed.). Addison-Wesley. ISBN 9780201100884.
+\item Allen, Frances E. (September 1981). "A History of Language Processor Technology in IBM" (PDF). IBM Journal of Research and Development (IBM) 25 (5). doi:10.1147/rd.255.0535.
+\item Allen, Randy; Kennedy, Ken (2001). Optimizing Compilers for Modern Architectures. Morgan Kaufmann Publishers. ISBN 1-55860-286-0.
+
+\end{enumerate}
+
+
+
+\end{document}

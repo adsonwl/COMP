@@ -1,0 +1,623 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="generator" content="Railroad Diagram Generator 1.45.1338"><style type="text/css" xml:space="preserve">
+    ::-moz-selection
+    {
+      color: #FFFCF0;
+      background: #0F0C00;
+    }
+    ::selection
+    {
+      color: #FFFCF0;
+      background: #0F0C00;
+    }      
+    .ebnf a
+    {
+      text-decoration: none;
+    }
+    .ebnf a:hover
+    {
+      color: #050400;
+      text-decoration: underline;
+    }    
+    .signature
+    {
+      color: #806600;
+      font-size: 11px;
+      text-align: right;
+    }
+    body
+    {
+      font: normal 12px Verdana, sans-serif;
+      color: #0F0C00;
+      background: #FFFCF0;
+    }
+    a:link, a:visited
+    {
+      color: #0F0C00;
+    }
+    a:link.signature, a:visited.signature
+    {
+      color: #806600;
+    }
+    a.button, #tabs li a
+    {
+      padding: 0.25em 0.5em;
+      border: 1px solid #806600;
+      background: #F1E8C6;
+      color: #806600;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a.button:hover, #tabs li a:hover
+    {
+      color: #050400;
+      background: #FFF6D1;
+      border-color: #050400;       
+    }     
+    #tabs
+    {
+      padding: 3px 10px;
+      margin-left: 0;
+      margin-top: 58px;
+      border-bottom: 1px solid #0F0C00;
+    }  
+    #tabs li
+    {
+      list-style: none;
+      margin-left: 5px;
+      display: inline;
+    }
+    #tabs li a
+    {     
+      border-bottom: 1px solid #0F0C00;
+    }
+    #tabs li a.active
+    {
+      color: #0F0C00;
+      background: #FFFCF0;
+      border-color: #0F0C00;
+      border-bottom: 1px solid #FFFCF0;
+      outline: none;
+    }
+    #divs div
+    {
+      display: none;
+      overflow:auto;
+    }
+    #divs div.active
+    {
+      display: block;
+    }
+    #text
+    {
+      border-color: #806600;
+      background: #FFFEFA;
+      color: #050400;
+    }
+    .small
+    {
+      vertical-align: top;
+      text-align: right;
+      font-size: 9px;
+      font-weight: normal;
+      line-height: 120%;
+    }
+    td.small
+    {
+      padding-top: 0px;
+    }
+    .hidden
+    {
+      visibility: hidden;
+    }
+    td:hover .hidden 
+    {
+      visibility: visible;
+    }
+    div.download
+    {
+      display: none;
+      background: #FFFCF0;
+      position: absolute;
+      right: 34px;
+      top: 94px;
+      padding: 10px;
+      border: 1px dotted #0F0C00;
+    }
+    #divs div.ebnf, div.ebnf
+    {
+      display: block;
+      padding-left: 16px;
+      padding-top: 2px; 
+      padding-bottom: 2px; 
+      background: #FFF6D1;
+    }
+    tr.option-line td:first-child
+    {
+      text-align: right
+    }
+    tr.option-text td
+    {
+      padding-bottom: 10px
+    }
+    table.palette
+    {
+      border-top: 1px solid #050400;
+      border-right: 1px solid #050400;
+      margin-bottom: 4px
+    }
+    td.palette
+    {
+      border-bottom: 1px solid #050400;
+      border-left: 1px solid #050400;
+    }
+    a.palette
+    {
+      padding: 2px 3px 2px 10px;
+      text-decoration: none;
+    }
+    .palette
+    {
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -o-user-select: none;
+      -ms-user-select: none;
+    }
+  </style></head>
+   <body>
+      
+      <p style="font-size: 14px; font-weight:bold"><a name="ini">ini:</a></p>
+      <img border="0" src="diagram/ini.png" height="88" width="304" usemap="#ini.map"><map name="ini.map">
+         <area shape="rect" coords="69,53,137,85" href="#extFunc" title="extFunc">
+         <area shape="rect" coords="177,21,255,53" href="#mainFunc" title="mainFunc"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#ini" title="ini" shape="rect">ini</a>      ::= ( <a href="#extFunc" title="extFunc" shape="rect">extFunc</a>? <a href="#mainFunc" title="mainFunc" shape="rect">mainFunc</a> )?</pre></div>
+         
+      </p>
+      
+      <p>no references</p><br><p style="font-size: 14px; font-weight:bold"><a name="mainFunc">mainFunc:</a></p>
+      <img border="0" src="diagram/mainFunc.png" height="56" width="582" usemap="#mainFunc.map"><map name="mainFunc.map">
+         <area shape="rect" coords="49,21,99,53" href="#TIPO" title="TIPO">
+         <area shape="rect" coords="119,21,171,53" href="#MAIN" title="MAIN">
+         <area shape="rect" coords="191,21,227,53" href="#AP" title="AP">
+         <area shape="rect" coords="247,21,281,53" href="#FP" title="FP">
+         <area shape="rect" coords="301,21,363,53" href="#ACHVS" title="ACHVS">
+         <area shape="rect" coords="383,21,453,53" href="#stmtList" title="stmtList">
+         <area shape="rect" coords="473,21,533,53" href="#FCHVS" title="FCHVS"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#mainFunc" title="mainFunc" shape="rect">mainFunc</a> ::= ( <a href="#TIPO" title="TIPO" shape="rect">TIPO</a> <a href="#MAIN" title="MAIN" shape="rect">MAIN</a> <a href="#AP" title="AP" shape="rect">AP</a> <a href="#FP" title="FP" shape="rect">FP</a> <a href="#ACHVS" title="ACHVS" shape="rect">ACHVS</a> <a href="#stmtList" title="stmtList" shape="rect">stmtList</a> <a href="#FCHVS" title="FCHVS" shape="rect">FCHVS</a> )?</pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#ini" title="ini">ini</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="extFunc">extFunc:</a></p>
+      <img border="0" src="diagram/extFunc.png" height="56" width="300" usemap="#extFunc.map"><map name="extFunc.map">
+         <area shape="rect" coords="49,21,115,53" href="#extfunc" title="extfunc">
+         <area shape="rect" coords="135,21,251,53" href="#declaracaoFunc" title="declaracaoFunc"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#extFunc" title="extFunc" shape="rect">extFunc</a>  ::= ( <a href="#extfunc" title="extfunc" shape="rect">extfunc</a> <a href="#declaracaoFunc" title="declaracaoFunc" shape="rect">declaracaoFunc</a> )?</pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#ini" title="ini">ini</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="declaracaoFunc">declaracaoFunc:</a></p>
+      <img border="0" src="diagram/declaracaoFunc.png" height="56" width="862" usemap="#declaracaoFunc.map"><map name="declaracaoFunc.map">
+         <area shape="rect" coords="49,21,99,53" href="#TIPO" title="TIPO">
+         <area shape="rect" coords="119,21,175,53" href="#NOME" title="NOME">
+         <area shape="rect" coords="195,21,231,53" href="#AP" title="AP">
+         <area shape="rect" coords="251,21,365,53" href="#parametroFunc" title="parametroFunc">
+         <area shape="rect" coords="385,21,419,53" href="#FP" title="FP">
+         <area shape="rect" coords="439,21,501,53" href="#ACHVS" title="ACHVS">
+         <area shape="rect" coords="521,21,591,53" href="#stmtList" title="stmtList">
+         <area shape="rect" coords="611,21,679,53" href="#RETURN" title="RETURN">
+         <area shape="rect" coords="699,21,733,53" href="#vlr" title="vlr">
+         <area shape="rect" coords="753,21,813,53" href="#FCHVS" title="FCHVS"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#declaracaoFunc" title="declaracaoFunc" shape="rect">declaracaoFunc</a>
+         ::= ( <a href="#TIPO" title="TIPO" shape="rect">TIPO</a> <a href="#NOME" title="NOME" shape="rect">NOME</a> <a href="#AP" title="AP" shape="rect">AP</a> <a href="#parametroFunc" title="parametroFunc" shape="rect">parametroFunc</a> <a href="#FP" title="FP" shape="rect">FP</a> <a href="#ACHVS" title="ACHVS" shape="rect">ACHVS</a> <a href="#stmtList" title="stmtList" shape="rect">stmtList</a> <a href="#RETURN" title="RETURN" shape="rect">RETURN</a> <a href="#vlr" title="vlr" shape="rect">vlr</a> <a href="#FCHVS" title="FCHVS" shape="rect">FCHVS</a> )?</pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#extFunc" title="extFunc">extFunc</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="parametroFunc">parametroFunc:</a></p>
+      <img border="0" src="diagram/parametroFunc.png" height="96" width="264" usemap="#parametroFunc.map"><map name="parametroFunc.map">
+         <area shape="rect" coords="69,45,119,77" href="#TIPO" title="TIPO">
+         <area shape="rect" coords="139,45,195,77" href="#NOME" title="NOME"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#parametroFunc" title="parametroFunc" shape="rect">parametroFunc</a>
+         ::= ( <a href="#TIPO" title="TIPO" shape="rect">TIPO</a> <a href="#NOME" title="NOME" shape="rect">NOME</a> ( ',' <a href="#TIPO" title="TIPO" shape="rect">TIPO</a> <a href="#NOME" title="NOME" shape="rect">NOME</a> )* )?</pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#declaracaoFunc" title="declaracaoFunc">declaracaoFunc</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="stmtList">stmtList:</a></p>
+      <img border="0" src="diagram/stmtList.png" height="68" width="230" usemap="#stmtList.map"><map name="stmtList.map">
+         <area shape="rect" coords="69,17,117,49" href="#stmt" title="stmt"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#stmtList" title="stmtList" shape="rect">stmtList</a> ::= ( <a href="#stmt" title="stmt" shape="rect">stmt</a> ' ' )*</pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#declaracaoFunc" title="declaracaoFunc">declaracaoFunc</a></li>
+            
+            <li><a href="#mainFunc" title="mainFunc">mainFunc</a></li>
+            
+            <li><a href="#stmtCondicional" title="stmtCondicional">stmtCondicional</a></li>
+            
+            <li><a href="#stmtRepeticao" title="stmtRepeticao">stmtRepeticao</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="stmtCondicional">stmtCondicional:</a></p>
+      <img border="0" src="diagram/stmtCondicional.png" height="266" width="1456" usemap="#stmtCondicional.map"><map name="stmtCondicional.map">
+         <area shape="rect" coords="49,1,81,33" href="#IF" title="IF">
+         <area shape="rect" coords="101,1,137,33" href="#AP" title="AP">
+         <area shape="rect" coords="157,1,207,33" href="#cmpr" title="cmpr">
+         <area shape="rect" coords="227,1,261,33" href="#FP" title="FP">
+         <area shape="rect" coords="301,1,363,33" href="#ACHVS" title="ACHVS">
+         <area shape="rect" coords="383,1,453,33" href="#stmtList" title="stmtList">
+         <area shape="rect" coords="473,1,533,33" href="#FCHVS" title="FCHVS">
+         <area shape="rect" coords="573,33,623,65" href="#ELSE" title="ELSE">
+         <area shape="rect" coords="663,33,725,65" href="#ACHVS" title="ACHVS">
+         <area shape="rect" coords="745,33,815,65" href="#stmtList" title="stmtList">
+         <area shape="rect" coords="835,33,895,65" href="#FCHVS" title="FCHVS">
+         <area shape="rect" coords="663,77,711,109" href="#stmt" title="stmt">
+         <area shape="rect" coords="301,121,349,153" href="#stmt" title="stmt">
+         <area shape="rect" coords="49,187,119,219" href="#SWITCH" title="SWITCH">
+         <area shape="rect" coords="139,187,175,219" href="#AP" title="AP">
+         <area shape="rect" coords="195,187,251,219" href="#NOME" title="NOME">
+         <area shape="rect" coords="271,187,305,219" href="#FP" title="FP">
+         <area shape="rect" coords="325,187,387,219" href="#ACHVS" title="ACHVS">
+         <area shape="rect" coords="427,187,479,219" href="#CASE" title="CASE">
+         <area shape="rect" coords="499,187,559,219" href="#VALOR" title="VALOR">
+         <area shape="rect" coords="623,187,693,219" href="#stmtList" title="stmtList">
+         <area shape="rect" coords="713,187,773,219" href="#BREAK" title="BREAK">
+         <area shape="rect" coords="427,231,501,263" href="#DEFAULT" title="DEFAULT">
+         <area shape="rect" coords="565,231,635,263" href="#stmtList" title="stmtList">
+         <area shape="rect" coords="897,187,949,219" href="#CASE" title="CASE">
+         <area shape="rect" coords="969,187,1029,219" href="#VALOR" title="VALOR">
+         <area shape="rect" coords="1093,187,1163,219" href="#stmtList" title="stmtList">
+         <area shape="rect" coords="1183,187,1243,219" href="#BREAK" title="BREAK">
+         <area shape="rect" coords="1347,187,1407,219" href="#FCHVS" title="FCHVS"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#stmtCondicional" title="stmtCondicional" shape="rect">stmtCondicional</a>
+         ::= <a href="#IF" title="IF" shape="rect">IF</a> <a href="#AP" title="AP" shape="rect">AP</a> <a href="#cmpr" title="cmpr" shape="rect">cmpr</a> <a href="#FP" title="FP" shape="rect">FP</a> ( <a href="#ACHVS" title="ACHVS" shape="rect">ACHVS</a> <a href="#stmtList" title="stmtList" shape="rect">stmtList</a> <a href="#FCHVS" title="FCHVS" shape="rect">FCHVS</a> ( <a href="#ELSE" title="ELSE" shape="rect">ELSE</a> ( <a href="#ACHVS" title="ACHVS" shape="rect">ACHVS</a> <a href="#stmtList" title="stmtList" shape="rect">stmtList</a> <a href="#FCHVS" title="FCHVS" shape="rect">FCHVS</a> | <a href="#stmt" title="stmt" shape="rect">stmt</a> ) )? | <a href="#stmt" title="stmt" shape="rect">stmt</a> )
+           | <a href="#SWITCH" title="SWITCH" shape="rect">SWITCH</a> <a href="#AP" title="AP" shape="rect">AP</a> <a href="#NOME" title="NOME" shape="rect">NOME</a> <a href="#FP" title="FP" shape="rect">FP</a> <a href="#ACHVS" title="ACHVS" shape="rect">ACHVS</a> ( <a href="#CASE" title="CASE" shape="rect">CASE</a> <a href="#VALOR" title="VALOR" shape="rect">VALOR</a> ':' <a href="#stmtList" title="stmtList" shape="rect">stmtList</a> <a href="#BREAK" title="BREAK" shape="rect">BREAK</a> ';' | <a href="#DEFAULT" title="DEFAULT" shape="rect">DEFAULT</a> ':' <a href="#stmtList" title="stmtList" shape="rect">stmtList</a> ) ( <a href="#CASE" title="CASE" shape="rect">CASE</a> <a href="#VALOR" title="VALOR" shape="rect">VALOR</a> ':' <a href="#stmtList" title="stmtList" shape="rect">stmtList</a> <a href="#BREAK" title="BREAK" shape="rect">BREAK</a> ';' )* <a href="#FCHVS" title="FCHVS" shape="rect">FCHVS</a></pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#stmt" title="stmt">stmt</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="atrbs">atrbs:</a></p>
+      <img border="0" src="diagram/atrbs.png" height="36" width="244" usemap="#atrbs.map"><map name="atrbs.map">
+         <area shape="rect" coords="29,1,85,33" href="#NOME" title="NOME">
+         <area shape="rect" coords="155,1,215,33" href="#VALOR" title="VALOR"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#atrbs" title="atrbs" shape="rect">atrbs</a>    ::= <a href="#NOME" title="NOME" shape="rect">NOME</a> '=' <a href="#VALOR" title="VALOR" shape="rect">VALOR</a></pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#stmtRepeticao" title="stmtRepeticao">stmtRepeticao</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="vlr">vlr:</a></p>
+      <img border="0" src="diagram/vlr.png" height="80" width="158" usemap="#vlr.map"><map name="vlr.map">
+         <area shape="rect" coords="49,1,109,33" href="#VALOR" title="VALOR">
+         <area shape="rect" coords="49,45,105,77" href="#NOME" title="NOME"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#vlr" title="vlr" shape="rect">vlr</a>      ::= <a href="#VALOR" title="VALOR" shape="rect">VALOR</a>
+           | <a href="#NOME" title="NOME" shape="rect">NOME</a></pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#chamaFunc" title="chamaFunc">chamaFunc</a></li>
+            
+            <li><a href="#cmpr" title="cmpr">cmpr</a></li>
+            
+            <li><a href="#dclrVar" title="dclrVar">dclrVar</a></li>
+            
+            <li><a href="#declaracaoFunc" title="declaracaoFunc">declaracaoFunc</a></li>
+            
+            <li><a href="#incr" title="incr">incr</a></li>
+            
+            <li><a href="#oprtArit" title="oprtArit">oprtArit</a></li>
+            
+            <li><a href="#preDefFunc" title="preDefFunc">preDefFunc</a></li>
+            
+            <li><a href="#stmt" title="stmt">stmt</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="cmpr">cmpr:</a></p>
+      <img border="0" src="diagram/cmpr.png" height="256" width="246" usemap="#cmpr.map"><map name="cmpr.map">
+         <area shape="rect" coords="29,1,63,33" href="#vlr" title="vlr">
+         <area shape="rect" coords="183,1,217,33" href="#vlr" title="vlr"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#cmpr" title="cmpr" shape="rect">cmpr</a>     ::= <a href="#vlr" title="vlr" shape="rect">vlr</a> ( '==' | '&gt;=' | '&lt;=' | '!=' | '&gt;' | '&lt;' ) <a href="#vlr" title="vlr" shape="rect">vlr</a></pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#oprtLogico" title="oprtLogico">oprtLogico</a></li>
+            
+            <li><a href="#stmtCondicional" title="stmtCondicional">stmtCondicional</a></li>
+            
+            <li><a href="#stmtRepeticao" title="stmtRepeticao">stmtRepeticao</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="incr">incr:</a></p>
+      <img border="0" src="diagram/incr.png" height="168" width="308" usemap="#incr.map"><map name="incr.map">
+         <area shape="rect" coords="29,1,85,33" href="#NOME" title="NOME">
+         <area shape="rect" coords="225,89,259,121" href="#vlr" title="vlr"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#incr" title="incr" shape="rect">incr</a>     ::= <a href="#NOME" title="NOME" shape="rect">NOME</a> ( '++' | '--' | ( '+=' | '-=' ) <a href="#vlr" title="vlr" shape="rect">vlr</a> )</pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#stmt" title="stmt">stmt</a></li>
+            
+            <li><a href="#stmtRepeticao" title="stmtRepeticao">stmtRepeticao</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="stmtRepeticao">stmtRepeticao:</a></p>
+      <img border="0" src="diagram/stmtRepeticao.png" height="80" width="796" usemap="#stmtRepeticao.map"><map name="stmtRepeticao.map">
+         <area shape="rect" coords="49,1,93,33" href="#FOR" title="FOR">
+         <area shape="rect" coords="113,1,149,33" href="#AP" title="AP">
+         <area shape="rect" coords="169,1,221,33" href="#atrbs" title="atrbs">
+         <area shape="rect" coords="285,1,335,33" href="#cmpr" title="cmpr">
+         <area shape="rect" coords="399,1,441,33" href="#incr" title="incr">
+         <area shape="rect" coords="49,45,111,77" href="#WHILE" title="WHILE">
+         <area shape="rect" coords="131,45,167,77" href="#AP" title="AP">
+         <area shape="rect" coords="187,45,237,77" href="#cmpr" title="cmpr">
+         <area shape="rect" coords="481,1,515,33" href="#FP" title="FP">
+         <area shape="rect" coords="535,1,597,33" href="#ACHVS" title="ACHVS">
+         <area shape="rect" coords="617,1,687,33" href="#stmtList" title="stmtList">
+         <area shape="rect" coords="707,1,767,33" href="#FCHVS" title="FCHVS"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#stmtRepeticao" title="stmtRepeticao" shape="rect">stmtRepeticao</a>
+         ::= ( <a href="#FOR" title="FOR" shape="rect">FOR</a> <a href="#AP" title="AP" shape="rect">AP</a> <a href="#atrbs" title="atrbs" shape="rect">atrbs</a> ';' <a href="#cmpr" title="cmpr" shape="rect">cmpr</a> ';' <a href="#incr" title="incr" shape="rect">incr</a> | <a href="#WHILE" title="WHILE" shape="rect">WHILE</a> <a href="#AP" title="AP" shape="rect">AP</a> <a href="#cmpr" title="cmpr" shape="rect">cmpr</a> ) <a href="#FP" title="FP" shape="rect">FP</a> <a href="#ACHVS" title="ACHVS" shape="rect">ACHVS</a> <a href="#stmtList" title="stmtList" shape="rect">stmtList</a> <a href="#FCHVS" title="FCHVS" shape="rect">FCHVS</a></pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#stmt" title="stmt">stmt</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="dclrVar">dclrVar:</a></p>
+      <img border="0" src="diagram/dclrVar.png" height="68" width="328" usemap="#dclrVar.map"><map name="dclrVar.map">
+         <area shape="rect" coords="29,1,79,33" href="#TIPO" title="TIPO">
+         <area shape="rect" coords="99,1,155,33" href="#NOME" title="NOME">
+         <area shape="rect" coords="245,33,279,65" href="#vlr" title="vlr"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#dclrVar" title="dclrVar" shape="rect">dclrVar</a>  ::= <a href="#TIPO" title="TIPO" shape="rect">TIPO</a> <a href="#NOME" title="NOME" shape="rect">NOME</a> ( '=' <a href="#vlr" title="vlr" shape="rect">vlr</a> )?</pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#stmt" title="stmt">stmt</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="oprtArit">oprtArit:</a></p>
+      <img border="0" src="diagram/oprtArit.png" height="168" width="236" usemap="#oprtArit.map"><map name="oprtArit.map">
+         <area shape="rect" coords="29,1,63,33" href="#vlr" title="vlr">
+         <area shape="rect" coords="173,1,207,33" href="#vlr" title="vlr"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#oprtArit" title="oprtArit" shape="rect">oprtArit</a> ::= <a href="#vlr" title="vlr" shape="rect">vlr</a> ( '+' | '-' | '*' | '/' ) <a href="#vlr" title="vlr" shape="rect">vlr</a></pre></div>
+         
+      </p>
+      
+      <p>no references</p><br><p style="font-size: 14px; font-weight:bold"><a name="oprtLogico">oprtLogico:</a></p>
+      <img border="0" src="diagram/oprtLogico.png" height="124" width="318" usemap="#oprtLogico.map"><map name="oprtLogico.map">
+         <area shape="rect" coords="49,45,99,77" href="#cmpr" title="cmpr">
+         <area shape="rect" coords="239,1,289,33" href="#cmpr" title="cmpr"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#oprtLogico" title="oprtLogico" shape="rect">oprtLogico</a>
+         ::= ( '!' | <a href="#cmpr" title="cmpr" shape="rect">cmpr</a> ( '&amp;&amp;' | '||' ) ) <a href="#cmpr" title="cmpr" shape="rect">cmpr</a></pre></div>
+         
+      </p>
+      
+      <p>no references</p><br><p style="font-size: 14px; font-weight:bold"><a name="preDefFunc">preDefFunc:</a></p>
+      <img border="0" src="diagram/preDefFunc.png" height="124" width="410" usemap="#preDefFunc.map"><map name="preDefFunc.map">
+         <area shape="rect" coords="49,1,99,33" href="#POW" title="POW">
+         <area shape="rect" coords="119,1,155,33" href="#AP" title="AP">
+         <area shape="rect" coords="175,1,209,33" href="#vlr" title="vlr">
+         <area shape="rect" coords="69,45,121,77" href="#SQRT" title="SQRT">
+         <area shape="rect" coords="69,89,131,121" href="#LOG10" title="LOG10">
+         <area shape="rect" coords="171,45,207,77" href="#AP" title="AP">
+         <area shape="rect" coords="293,1,327,33" href="#vlr" title="vlr">
+         <area shape="rect" coords="347,1,381,33" href="#FP" title="FP"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#preDefFunc" title="preDefFunc" shape="rect">preDefFunc</a>
+         ::= ( <a href="#POW" title="POW" shape="rect">POW</a> <a href="#AP" title="AP" shape="rect">AP</a> <a href="#vlr" title="vlr" shape="rect">vlr</a> ',' | ( <a href="#SQRT" title="SQRT" shape="rect">SQRT</a> | <a href="#LOG10" title="LOG10" shape="rect">LOG10</a> ) <a href="#AP" title="AP" shape="rect">AP</a> ) <a href="#vlr" title="vlr" shape="rect">vlr</a> <a href="#FP" title="FP" shape="rect">FP</a></pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#stmt" title="stmt">stmt</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="chamaFunc">chamaFunc:</a></p>
+      <img border="0" src="diagram/chamaFunc.png" height="68" width="402" usemap="#chamaFunc.map"><map name="chamaFunc.map">
+         <area shape="rect" coords="29,17,85,49" href="#NOME" title="NOME">
+         <area shape="rect" coords="105,17,141,49" href="#AP" title="AP">
+         <area shape="rect" coords="245,17,279,49" href="#vlr" title="vlr">
+         <area shape="rect" coords="339,17,373,49" href="#FP" title="FP"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#chamaFunc" title="chamaFunc" shape="rect">chamaFunc</a>
+         ::= <a href="#NOME" title="NOME" shape="rect">NOME</a> <a href="#AP" title="AP" shape="rect">AP</a> ( ',' <a href="#vlr" title="vlr" shape="rect">vlr</a> )* <a href="#FP" title="FP" shape="rect">FP</a></pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#stmt" title="stmt">stmt</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="stmt">stmt:</a></p>
+      <img border="0" src="diagram/stmt.png" height="366" width="684" usemap="#stmt.map"><map name="stmt.map">
+         <area shape="rect" coords="49,1,169,33" href="#stmtCondicional" title="stmtCondicional">
+         <area shape="rect" coords="49,45,159,77" href="#stmtRepeticao" title="stmtRepeticao">
+         <area shape="rect" coords="69,89,131,121" href="#dclrVar" title="dclrVar">
+         <area shape="rect" coords="109,155,165,187" href="#NOME" title="NOME">
+         <area shape="rect" coords="295,155,351,187" href="#NOME" title="NOME">
+         <area shape="rect" coords="441,155,475,187" href="#vlr" title="vlr">
+         <area shape="rect" coords="441,199,531,231" href="#preDefFunc" title="preDefFunc">
+         <area shape="rect" coords="441,243,531,275" href="#chamaFunc" title="chamaFunc">
+         <area shape="rect" coords="295,287,337,319" href="#incr" title="incr">
+         <area shape="rect" coords="69,331,159,363" href="#chamaFunc" title="chamaFunc"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#stmt" title="stmt" shape="rect">stmt</a>     ::= <a href="#stmtCondicional" title="stmtCondicional" shape="rect">stmtCondicional</a>
+           | <a href="#stmtRepeticao" title="stmtRepeticao" shape="rect">stmtRepeticao</a>
+           | ( <a href="#dclrVar" title="dclrVar" shape="rect">dclrVar</a> | ( <a href="#NOME" title="NOME" shape="rect">NOME</a> '=' )* ( <a href="#NOME" title="NOME" shape="rect">NOME</a> '=' ( <a href="#vlr" title="vlr" shape="rect">vlr</a> | <a href="#preDefFunc" title="preDefFunc" shape="rect">preDefFunc</a> | <a href="#chamaFunc" title="chamaFunc" shape="rect">chamaFunc</a> ) | <a href="#incr" title="incr" shape="rect">incr</a> ) | <a href="#chamaFunc" title="chamaFunc" shape="rect">chamaFunc</a> ) ';'</pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#stmtCondicional" title="stmtCondicional">stmtCondicional</a></li>
+            
+            <li><a href="#stmtList" title="stmtList">stmtList</a></li>
+            
+         </ul>
+         
+      </p><br><hr>
+      
+      <p>
+         
+         <table border="0" class="signature">
+            
+            <tr>
+               
+               <td style="width: 100%">&nbsp;</td>
+               
+               <td valign="top">
+                  
+                  <nobr class="signature">... generated by <a name="Railroad-Diagram-Generator" class="signature" title="http://www.bottlecaps.de/rr/ui" href="http://www.bottlecaps.de/rr/ui">Railroad Diagram Generator</a></nobr>
+                  
+               </td>
+               
+               <td><a name="Railroad-Diagram-Generator" title="http://www.bottlecaps.de/rr/ui" href="http://www.bottlecaps.de/rr/ui">
+                     <img border="0" src="diagram/rr-1.45.1338.png" height="16" width="16"></a></td>
+               
+            </tr>
+            
+         </table>
+         
+      </p>
+      
+   </body>
+</html>

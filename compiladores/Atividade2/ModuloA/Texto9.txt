@@ -1,0 +1,113 @@
+Introdução e unboxing
+O iPhone 6 é o primeiro smartphone que a Apple resolveu entregar um novo design, desde o lançamento do iPhone 5 e sua tela com uma polegada mais alta do que os modelos anteriores. A mudança por aqui é bastante drástica e ela chega com o objetivo bem claro de retomar os usuários que abandonaram a marca, com foco em ter um smartphone de tela maior e com corpo bastante fino. Deu certo, o iPhone é tudo isso e continua com um hardware modesto - que entrega melhor desempenho do que muito Android com muito mais poder de fogo. A embalagem também mudou e tem, por mais estranho que possa parecer, nenhuma foto ou imagem do celular na frente. Temos apenas um vulto do gadget, com as medidas em tamanho real e nada mais. Atrás estão informações como a capacidade de armazenamento e o número de série, junto do IMEI e cor da carcaça.
+
+
+Caixa minimalista
+Abrindo o pacote, encontramos uma pequena cama para o celular - com um buraco para que a lente não faça com que o aparelho fique torto na embalagem. Puxando a pequena lingueta, um pacote com manuais de instrução, adesivos da Apple e a ferramenta para abertura do chip da operadora são exibidos. Abaixo disso estão, bem organizados, o fone de ouvido (em sua própria caixa de plástico), carregador de tomada (este modelo é o americano, que entrega o padrão de tomadas dos Estados Unidos) e um cabo Lightning. Cada um em seu respectivo espaço e sem encostar no outro - uma organização que nenhuma fabricante consegue replicar.
+
+
+Acessórios organizados, muito bem organizados
+Parte externa
+Por fora o iPhone 6 é um iPhone totalmente novo, mas que não foge muito do que já existia na Apple. Seu desenho lembra - bastante - linhas do iPod Touch mais recente, juntando com algumas outras que foram introduzidas com os iPads. Ele continua como um retângulo de bordas arredondadas e um botão home bem grande na frente. Antes este botão era desajeitado e com clara impressão de que poderia ser bem menor, mas o Touch ID mostrou que o tamanho dele é perfeito para a leitura da impressão digital (cabe o dedo em qualquer posição, de qualquer forma). Na frente temos uma tela IPS de 4,7 polegadas, com proteção para riscos e também para marcas de dedo (tela oleofóbica), com resolução de 1334 x 750 pixels e densidade que continua nos 326 pixels por polegada da tecnologia Retina Display. A tela recebeu grandes melhorias na qualidade de exibição de cores e no ângulo de visão - muito, muito melhor do que praticamente qualquer Android existente no mercado e de resolução superior, mas inferior ao que a LG fez com a tela do G3. Ainda na frente estão os sensores de luz, proximidade, alto-falante, botão home (com leitor de impressões digitais) e uma câmera frontal de 1.2 megapixels.
+
+
+Tela de 4,7 polegadas e resolução superior ao HD
+Do lado direito fica a gaveta para o chip da operadora (padrão nano-SIM) e botão de liga/desliga. Do outro lado estão botões de controle de volume (maiores e mais longos do que nas versões anteriores) e uma chave para ligar ou desligar o modo mudo.
+
+
+Botão liga/desliga foi para a lateral direita
+Acima não há nada, sendo que abaixo ficam (agora bem mais simples de diferenciar) o alto-falante, microfone principal, entrada de fone de ouvido e a entrada para o cabo Lightning.
+
+
+Entrada para fone de ouvido, cabo Lightning, alto-falante e microfone
+Atrás está, toda em alumínio, a tampa da bateria (não removível), antenas (no topo e abaixo), dois LEDs para flash, microfone secundário (para isolamento de ruídos) e a câmera de 8 megapixels, que filma em 1080p em até 60 quadros por segundo e que vai até 240 quadros por segundo, em 720p. A bateria é de 1.810mAh, que cresceu um pouco quando olhamos o modelo anterior e que isso não significa autonomia maior. Ela apenas compensa o gasto extra de energia para alimentar a maior tela e maior resolução. Nos testes, conseguimos pouco mais de 9 horas de reprodução de vídeo, 10 horas de navegação na internet e 13 horas de conversa em 3G. Em reprodução de música, o iPhone 6 garante até 50 horas sem parar.
+
+
+Traseira nova, em alumínio e sem vidro
+Dimensões, pegada e peso
+A pegada do iPhone não é boa, não como era nos modelos anteriores. As laterais ficaram bem lisas e passam, sem qualquer medo, a sensação de que o smartphone cairá das mãos - sério, essa sensação acontece o tempo todo. O tamanho exagerado do aparelho é outro ponto negativo para a ergonomia. Ele é grande demais, tem bordas enormes e isso garante que seu tamanho nas mãos seja imenso - maior que muito phablet com tela bem maior. Em números, temos um aparelho com 138,1 milímetros de altura, por 67 milímetros de largura e 6,9 milímetros de espessura.
+
+
+Pegada desconfortável por tamanho exagerado do aparelho
+Outro problema na ergonomia, não tão nas mãos, é a "verruga" que virou a lente do aparelho. De tão fino, a Apple acabou colocando uma lente saltada para fora e que faz o smartphone balançar na mesa reta. Pior que isso, é que qualquer coisa que encostar na traseira, arranha primeiro a lente e depois a carcaça - uma falha de terrível design. Como a imensa maioria dos usuários de iPhone já utiliza uma capa protetora, este problema acaba que sumindo e não vai incomodar mais - laterais escorregadias e lente saltada...compre uma capa!
+
+
+Desempenho do iOS
+Mesmo com um processador que está muito abaixo de sua concorrência, no mundo do Android e também nos Windows Phone mais parrudos, o iOS roda sem qualquer engasgo ou travamento no iPhone 6. Por dentro a Apple colocou o novo chip A8, com um processador (chamado Cyclone) criado com base na arquitetura ARMv8 e em 64 bits, o primeiro do mercado assim. São dois núcleos rodando a 1.4 GHz, acompanhados de 1 GB de memória RAM DD3 e uma GPU PowerVR GX6450, com seus quatro núcleos dedicados para o processamento gráfico.
+
+
+O iOS 8 (que já vem instalado no iPhone) traz pequenas novidades em design para o sistema operacional móvel da Apple, com as mesmas cores chapadas, sem texturas que imitam algo real e muita transparência do iOS 7 - só que com ainda menos linhas e detalhes. Como não há menu de apps, tudo fica na tela inicial. Esta tela pode ser multiplicada, ou os ícones podem ser agrupados em pastas e, desta forma, evitam que tudo fique espalhado. A paginação também pode ocorrer dentro das pastas, sem limite para o número de apps lá dentro.
+
+
+Barra de notificações e barra para ajustes rápidos
+A barra de notificações também exibe os compromissos futuros e alguns widgets de apps instalados, enquanto uma barra inferior permite o controle de algumas funções e o acesso ao AirDrop, forma que a Apple criou para o compartilhamento de arquivos e informações via Bluetooth e/ou Wi-Fi entre dois ou mais iPhones, iPads, iPods e também os computadores da marca. Desta barra ainda é possível ligar os LEDs para uso de lanterna, abrir a calculadora, a câmera e um timer.
+
+
+Touch ID
+O Touch ID ainda está presente e ele é a única razão lógica do tamanho exagerado do botão inicial físico - qualquer dedo cabe lá, dos mais finos até os mais grossos. Este recurso armazena informações de impressões digitais do usuário e permite que o desbloqueio da tela, junto com compras na App Store e desbloqueio de alguns aplicativos (como o Dropbox e OneDrive), sejam autenticadas não mais com senha, mas sim com a impressão digital. O recurso apenas falhou, em nossos testes, com o dedo molhado ou sujo - algo comum em leitores de impressão digital, já que há obstáculo para a correta leitura da impressão. Neste caso a senha é exigida novamente, assim como já acontecia antes.
+
+
+Teclado de terceiros, agora no iOS
+O Siri, assistente de voz da Apple, está presente neste aparelho. Porém, até hoje, o pequenino caranguejo ainda não sabe falar e nem entender o nosso idioma tupiniquim. Por outro lado, há a possibilidade de escrever com a identificação da voz do usuário - tocando no botão do microfone, no teclado, e é só falar que ele vai escrevendo. Falando em teclado, agora é possível trocar o teclado original da Apple por outro terceiro, como os famosos Swype e SwiftKey.
+
+De fábrica, há alguns apps já instalados, como um para previsão do tempo, outro para acompanhar a variação de valores de empresas na bolsa de valores, uma banca para reunir assinaturas de revistas e jornais, o Passbook (que já funciona no Brasil e, em algumas companhias aéreas, substitui o bilhete de papel), calculadora, bússola e até o controverso serviço de mapas da Apple. Ainda não instalado, mas de graça na App Store, estão os programas do pacote iWork e iLife - Pages, Numbers e Keynote do iWork e Garage Band para edição de áudio e iMovie para vídeos.
+
+
+Safari, quase tão completo como o do computador
+O navegador padrão é o Safari, que permite a navegação por abas, exibe a versão de desktop de qualquer site e permite que sites virem atalhos na tela inicial. Um dos recursos exclusivos de produtos da Apple é o armazenamento de senhas no iCloud, que pode ser acessado no Safari do computador. A navegação é bastante fluida, sem engasgos em qualquer site. Como a tela cresceu, junto da resolução, a leitura de sites está mais agradável e mais dele é exibido de uma só vez.
+
+Jogos e multimídia
+Olhando apenas em números de hardware, o iPhone deveria contar com um desempenho em jogos bastante inferior ao que muitos Androids de médio custo alcançam. Porém, o resultado é totalmente diferente do que esperamos de um dual-core de 1.4 GHz e com apenas 1 GB de memória RAM. A otimização de software que a Apple criou e a API Metal (funciona como melhorias para o acesso dos apps e jogos ao que a GPU pode entregar), que chegou junto do iOS 8, faz com que nenhum Android (mesmo dos mais caros e parrudos) rode tão bem o Asphalt 8, como no iPhone 6. Repito: nenhum Android roda melhor. Por aqui há mais detalhes, mais texturas e animações mais complexas, tudo isso sem um engasgo sequer do aparelho durante a jogatina. O mesmo vale para praticamente qualquer jogo disponível na App Store. Tudo roda de forma perfeita e sem travamentos.
+
+
+Asphalt 8, rodando no iPhone 6
+O player de músicas é extremamente simples, não traz nenhum recurso extra e roda, nativamente, arquivos MP3, AAC, eAAC, WAV e M4A. As canções são reproduzidas com a arte do álbum e com acesso às compras da iTunes Store.
+
+
+Player de música simples e sem recursos extras
+Em vídeos, o player roda arquivos MP4, H.264, M-JPG e MOV , com resolução de até 1080p e sem qualquer engasgo. Arquivos de outros formatos podem ser reproduzidos em apps terceiros, como o competente e completo VLC.
+
+
+Vídeo reproduzido em 1080p, sem travamentos
+Câmera
+A Apple manteve os 8 megapixels que estão no iPhone há alguns anos. De cara pode parecer uma forma de não evoluir em nada, mas precisamos lembrar de que megapixels são apenas números que definem o tamanho da foto, não sua qualidade. Por outro lado, a câmera teve um salto bastante simples em quantidade de brilho que permite a entrada e no balanço geral de cores. Não é a melhor câmera em um smartphone, mas é muito melhor do que muito celular concorrente. Em fotos diurnas, há um ótimo balanço de branco, cores e de contraste - com o HDR dando uma ajuda bem simples e sem estourar cores.
+
+
+Foto com boa condição de luz (esquerda) e noturna (direita)
+Já em fotos noturnas, o resultado é bastante positivo. Muito brilho entra na lente e compensa a falta de luz. Mesmo em fotos em ambientes fechados e com pouca luz, o resultado é bastante positivo - sem muito brilho, mas com muito menos granulado do que seus concorrentes. Em vídeos, temos uma filmadora Full HD de 30 quadros por segundo, que trabalha bem com imagens com bastante luz, ou com menos luz. O som é mono e é possível filmar em até 240 quadros por segundo, o que faz com que a câmera fique oito vezes mais lenta do que a velocidade normal quando foi filmada. O resultado são vídeos bem fluidos e com resolução de até 720p.
+
+Pontos fortes e pontos fracos
+Pontos fortes
+Nova GPU, aliada com a API Metal, faz do iPhone a mais potente plataforma de games em smartphones
+4G funciona no Brasil, mesmo quando o iPhone é comprado nos Estados Unidos
+Câmera (ainda mais) lenta
+Tela grande, mas não exagerada
+Pontos fracos
+Bateria poderia durar mais
+Pegada desconfortável e escorregadia
+Câmera saltada é convite para riscos na lente
+Caro, muito caro
+Avaliação final do Tudocelular
+Custo - benefício
+
+Caro, o mais caro smartphone em sua categoria - muito mais do que qualquer concorrente Android. Olhando pela qualidade extra, o preço no Brasil está acima do que deveria ser.
+
+Embalagem e características
+
+Compacta, apenas com o espaço para o que é realmente necessário.
+
+Comodidade
+
+Laterais são lisas e o aparelho é reto atrás, o que não ajuda na ergonomia.
+
+Facilidade de uso
+
+iOS continua sendo o sistema operacional mais simples de aprender, mesmo para marinheiros de primeira viagem.
+
+Multimídia
+
+Rodou tudo, mas tem o problema de aceitar apenas o iTunes como forma de enviar músicas e vídeos. Isso é horrível.
+
+Votação Geral
+
+O melhor iPhone de todos, mas caro demais quando olhamos Androids parrudos. Vale, apenas se você não tem um iPhone 5S em mãos - principalmente pelo alto custo.

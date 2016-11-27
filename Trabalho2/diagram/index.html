@@ -1,0 +1,498 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="generator" content="Railroad Diagram Generator 1.45.1338"><style type="text/css" xml:space="preserve">
+    ::-moz-selection
+    {
+      color: #FFFCF0;
+      background: #0F0C00;
+    }
+    ::selection
+    {
+      color: #FFFCF0;
+      background: #0F0C00;
+    }      
+    .ebnf a
+    {
+      text-decoration: none;
+    }
+    .ebnf a:hover
+    {
+      color: #050400;
+      text-decoration: underline;
+    }    
+    .signature
+    {
+      color: #806600;
+      font-size: 11px;
+      text-align: right;
+    }
+    body
+    {
+      font: normal 12px Verdana, sans-serif;
+      color: #0F0C00;
+      background: #FFFCF0;
+    }
+    a:link, a:visited
+    {
+      color: #0F0C00;
+    }
+    a:link.signature, a:visited.signature
+    {
+      color: #806600;
+    }
+    a.button, #tabs li a
+    {
+      padding: 0.25em 0.5em;
+      border: 1px solid #806600;
+      background: #F1E8C6;
+      color: #806600;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a.button:hover, #tabs li a:hover
+    {
+      color: #050400;
+      background: #FFF6D1;
+      border-color: #050400;       
+    }     
+    #tabs
+    {
+      padding: 3px 10px;
+      margin-left: 0;
+      margin-top: 58px;
+      border-bottom: 1px solid #0F0C00;
+    }  
+    #tabs li
+    {
+      list-style: none;
+      margin-left: 5px;
+      display: inline;
+    }
+    #tabs li a
+    {     
+      border-bottom: 1px solid #0F0C00;
+    }
+    #tabs li a.active
+    {
+      color: #0F0C00;
+      background: #FFFCF0;
+      border-color: #0F0C00;
+      border-bottom: 1px solid #FFFCF0;
+      outline: none;
+    }
+    #divs div
+    {
+      display: none;
+      overflow:auto;
+    }
+    #divs div.active
+    {
+      display: block;
+    }
+    #text
+    {
+      border-color: #806600;
+      background: #FFFEFA;
+      color: #050400;
+    }
+    .small
+    {
+      vertical-align: top;
+      text-align: right;
+      font-size: 9px;
+      font-weight: normal;
+      line-height: 120%;
+    }
+    td.small
+    {
+      padding-top: 0px;
+    }
+    .hidden
+    {
+      visibility: hidden;
+    }
+    td:hover .hidden 
+    {
+      visibility: visible;
+    }
+    div.download
+    {
+      display: none;
+      background: #FFFCF0;
+      position: absolute;
+      right: 34px;
+      top: 94px;
+      padding: 10px;
+      border: 1px dotted #0F0C00;
+    }
+    #divs div.ebnf, div.ebnf
+    {
+      display: block;
+      padding-left: 16px;
+      padding-top: 2px; 
+      padding-bottom: 2px; 
+      background: #FFF6D1;
+    }
+    tr.option-line td:first-child
+    {
+      text-align: right
+    }
+    tr.option-text td
+    {
+      padding-bottom: 10px
+    }
+    table.palette
+    {
+      border-top: 1px solid #050400;
+      border-right: 1px solid #050400;
+      margin-bottom: 4px
+    }
+    td.palette
+    {
+      border-bottom: 1px solid #050400;
+      border-left: 1px solid #050400;
+    }
+    a.palette
+    {
+      padding: 2px 3px 2px 10px;
+      text-decoration: none;
+    }
+    .palette
+    {
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -o-user-select: none;
+      -ms-user-select: none;
+    }
+  </style></head>
+   <body>
+      
+      <p style="font-size: 14px; font-weight:bold"><a name="entrada">entrada:</a></p>
+      <img border="0" src="diagram/entrada.png" height="52" width="562" usemap="#entrada.map"><map name="entrada.map">
+         <area shape="rect" coords="29,17,143,49" href="#tipoDocumento" title="tipoDocumento">
+         <area shape="rect" coords="163,17,215,49" href="#titulo" title="titulo">
+         <area shape="rect" coords="235,17,325,49" href="#INICIODOC" title="INICIODOC">
+         <area shape="rect" coords="365,17,423,49" href="#opcao" title="opcao">
+         <area shape="rect" coords="463,17,533,49" href="#FIMDOC" title="FIMDOC"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#entrada" title="entrada" shape="rect">entrada</a>  ::= <a href="#tipoDocumento" title="tipoDocumento" shape="rect">tipoDocumento</a> <a href="#titulo" title="titulo" shape="rect">titulo</a> <a href="#INICIODOC" title="INICIODOC" shape="rect">INICIODOC</a> <a href="#opcao" title="opcao" shape="rect">opcao</a>+ <a href="#FIMDOC" title="FIMDOC" shape="rect">FIMDOC</a></pre></div>
+         
+      </p>
+      
+      <p>no references</p><br><p style="font-size: 14px; font-weight:bold"><a name="ignorar">ignorar:</a></p>
+      <img border="0" src="diagram/ignorar.png" height="36" width="540" usemap="#ignorar.map"><map name="ignorar.map">
+         <area shape="rect" coords="29,1,165,33" href="#PALAVRAESPECIAL" title="PALAVRAESPECIAL">
+         <area shape="rect" coords="185,1,287,33" href="#ABRECHAVES" title="ABRECHAVES">
+         <area shape="rect" coords="307,1,381,33" href="#PALAVRA" title="PALAVRA">
+         <area shape="rect" coords="401,1,511,33" href="#FECHACHAVES" title="FECHACHAVES"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#ignorar" title="ignorar" shape="rect">ignorar</a>  ::= <a href="#PALAVRAESPECIAL" title="PALAVRAESPECIAL" shape="rect">PALAVRAESPECIAL</a> <a href="#ABRECHAVES" title="ABRECHAVES" shape="rect">ABRECHAVES</a> <a href="#PALAVRA" title="PALAVRA" shape="rect">PALAVRA</a> <a href="#FECHACHAVES" title="FECHACHAVES" shape="rect">FECHACHAVES</a></pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#textoFormatado" title="textoFormatado">textoFormatado</a></li>
+            
+            <li><a href="#tipoDocumento" title="tipoDocumento">tipoDocumento</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="tipoDocumento">tipoDocumento:</a></p>
+      <img border="0" src="diagram/tipoDocumento.png" height="36" width="588" usemap="#tipoDocumento.map"><map name="tipoDocumento.map">
+         <area shape="rect" coords="29,1,159,33" href="#DOCUMENTCLASS" title="DOCUMENTCLASS">
+         <area shape="rect" coords="179,1,281,33" href="#ABRECHAVES" title="ABRECHAVES">
+         <area shape="rect" coords="301,1,345,33" href="#tipo" title="tipo">
+         <area shape="rect" coords="365,1,475,33" href="#FECHACHAVES" title="FECHACHAVES">
+         <area shape="rect" coords="495,1,559,33" href="#ignorar" title="ignorar"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#tipoDocumento" title="tipoDocumento" shape="rect">tipoDocumento</a>
+         ::= <a href="#DOCUMENTCLASS" title="DOCUMENTCLASS" shape="rect">DOCUMENTCLASS</a> <a href="#ABRECHAVES" title="ABRECHAVES" shape="rect">ABRECHAVES</a> <a href="#tipo" title="tipo" shape="rect">tipo</a> <a href="#FECHACHAVES" title="FECHACHAVES" shape="rect">FECHACHAVES</a> <a href="#ignorar" title="ignorar" shape="rect">ignorar</a></pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#entrada" title="entrada">entrada</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="tipo">tipo:</a></p>
+      <img border="0" src="diagram/tipo.png" height="36" width="130" usemap="#tipo.map"><map name="tipo.map">
+         <area shape="rect" coords="29,1,101,33" href="#ARTICLE" title="ARTICLE"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#tipo" title="tipo" shape="rect">tipo</a>     ::= <a href="#ARTICLE" title="ARTICLE" shape="rect">ARTICLE</a></pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#tipoDocumento" title="tipoDocumento">tipoDocumento</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="titulo">titulo:</a></p>
+      <img border="0" src="diagram/titulo.png" height="36" width="436" usemap="#titulo.map"><map name="titulo.map">
+         <area shape="rect" coords="29,1,83,33" href="#TITLE" title="TITLE">
+         <area shape="rect" coords="103,1,205,33" href="#ABRECHAVES" title="ABRECHAVES">
+         <area shape="rect" coords="225,1,277,33" href="#texto" title="texto">
+         <area shape="rect" coords="297,1,407,33" href="#FECHACHAVES" title="FECHACHAVES"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#titulo" title="titulo" shape="rect">titulo</a>   ::= <a href="#TITLE" title="TITLE" shape="rect">TITLE</a> <a href="#ABRECHAVES" title="ABRECHAVES" shape="rect">ABRECHAVES</a> <a href="#texto" title="texto" shape="rect">texto</a> <a href="#FECHACHAVES" title="FECHACHAVES" shape="rect">FECHACHAVES</a></pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#entrada" title="entrada">entrada</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="opcao">opcao:</a></p>
+      <img border="0" src="diagram/opcao.png" height="212" width="218" usemap="#opcao.map"><map name="opcao.map">
+         <area shape="rect" coords="49,1,169,33" href="#textoFormatado" title="textoFormatado">
+         <area shape="rect" coords="49,45,95,77" href="#lista" title="lista">
+         <area shape="rect" coords="49,89,131,121" href="#paragrafo" title="paragrafo">
+         <area shape="rect" coords="49,133,105,165" href="#secao" title="secao">
+         <area shape="rect" coords="49,177,129,209" href="#subsecao" title="subsecao"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#opcao" title="opcao" shape="rect">opcao</a>    ::= <a href="#textoFormatado" title="textoFormatado" shape="rect">textoFormatado</a>
+           | <a href="#lista" title="lista" shape="rect">lista</a>
+           | <a href="#paragrafo" title="paragrafo" shape="rect">paragrafo</a>
+           | <a href="#secao" title="secao" shape="rect">secao</a>
+           | <a href="#subsecao" title="subsecao" shape="rect">subsecao</a></pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#entrada" title="entrada">entrada</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="lista">lista:</a></p>
+      <img border="0" src="diagram/lista.png" height="80" width="404" usemap="#lista.map"><map name="lista.map">
+         <area shape="rect" coords="49,1,155,33" href="#INICIOLISTAE" title="INICIOLISTAE">
+         <area shape="rect" coords="175,1,251,33" href="#itemLista" title="itemLista">
+         <area shape="rect" coords="271,1,355,33" href="#FIMLISTAE" title="FIMLISTAE">
+         <area shape="rect" coords="49,45,151,77" href="#INICIOLISTAI" title="INICIOLISTAI">
+         <area shape="rect" coords="171,45,247,77" href="#itemLista" title="itemLista">
+         <area shape="rect" coords="267,45,349,77" href="#FIMLISTAI" title="FIMLISTAI"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#lista" title="lista" shape="rect">lista</a>    ::= <a href="#INICIOLISTAE" title="INICIOLISTAE" shape="rect">INICIOLISTAE</a> <a href="#itemLista" title="itemLista" shape="rect">itemLista</a> <a href="#FIMLISTAE" title="FIMLISTAE" shape="rect">FIMLISTAE</a>
+           | <a href="#INICIOLISTAI" title="INICIOLISTAI" shape="rect">INICIOLISTAI</a> <a href="#itemLista" title="itemLista" shape="rect">itemLista</a> <a href="#FIMLISTAI" title="FIMLISTAI" shape="rect">FIMLISTAI</a></pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#itemLista" title="itemLista">itemLista</a></li>
+            
+            <li><a href="#opcao" title="opcao">opcao</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="itemLista">itemLista:</a></p>
+      <img border="0" src="diagram/itemLista.png" height="68" width="394" usemap="#itemLista.map"><map name="itemLista.map">
+         <area shape="rect" coords="69,17,119,49" href="#ITEM" title="ITEM">
+         <area shape="rect" coords="139,17,185,49" href="#lista" title="lista">
+         <area shape="rect" coords="205,17,325,49" href="#textoFormatado" title="textoFormatado"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#itemLista" title="itemLista" shape="rect">itemLista</a>
+         ::= ( <a href="#ITEM" title="ITEM" shape="rect">ITEM</a> <a href="#lista" title="lista" shape="rect">lista</a> <a href="#textoFormatado" title="textoFormatado" shape="rect">textoFormatado</a> )*</pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#lista" title="lista">lista</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="textoFormatado">textoFormatado:</a></p>
+      <img border="0" src="diagram/textoFormatado.png" height="256" width="812" usemap="#textoFormatado.map"><map name="textoFormatado.map">
+         <area shape="rect" coords="89,1,165,33" href="#NEGRITO" title="NEGRITO">
+         <area shape="rect" coords="89,45,159,77" href="#ITALICO" title="ITALICO">
+         <area shape="rect" coords="89,89,191,121" href="#SUBLINHADO" title="SUBLINHADO">
+         <area shape="rect" coords="231,1,333,33" href="#ABRECHAVES" title="ABRECHAVES">
+         <area shape="rect" coords="69,133,171,165" href="#ABRECHAVES" title="ABRECHAVES">
+         <area shape="rect" coords="211,133,287,165" href="#NEGRITO" title="NEGRITO">
+         <area shape="rect" coords="211,177,281,209" href="#ITALICO" title="ITALICO">
+         <area shape="rect" coords="373,1,493,33" href="#textoFormatado" title="textoFormatado">
+         <area shape="rect" coords="513,1,623,33" href="#FECHACHAVES" title="FECHACHAVES">
+         <area shape="rect" coords="643,1,763,33" href="#textoFormatado" title="textoFormatado">
+         <area shape="rect" coords="49,221,113,253" href="#ignorar" title="ignorar">
+         <area shape="rect" coords="133,221,185,253" href="#texto" title="texto">
+         <area shape="rect" coords="205,221,269,253" href="#ignorar" title="ignorar"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#textoFormatado" title="textoFormatado" shape="rect">textoFormatado</a>
+         ::= ( ( <a href="#NEGRITO" title="NEGRITO" shape="rect">NEGRITO</a> | <a href="#ITALICO" title="ITALICO" shape="rect">ITALICO</a> | <a href="#SUBLINHADO" title="SUBLINHADO" shape="rect">SUBLINHADO</a> ) <a href="#ABRECHAVES" title="ABRECHAVES" shape="rect">ABRECHAVES</a> | <a href="#ABRECHAVES" title="ABRECHAVES" shape="rect">ABRECHAVES</a> ( <a href="#NEGRITO" title="NEGRITO" shape="rect">NEGRITO</a> | <a href="#ITALICO" title="ITALICO" shape="rect">ITALICO</a> ) ) <a href="#textoFormatado" title="textoFormatado" shape="rect">textoFormatado</a> <a href="#FECHACHAVES" title="FECHACHAVES" shape="rect">FECHACHAVES</a> <a href="#textoFormatado" title="textoFormatado" shape="rect">textoFormatado</a>
+           | <a href="#ignorar" title="ignorar" shape="rect">ignorar</a> <a href="#texto" title="texto" shape="rect">texto</a> <a href="#ignorar" title="ignorar" shape="rect">ignorar</a></pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#itemLista" title="itemLista">itemLista</a></li>
+            
+            <li><a href="#opcao" title="opcao">opcao</a></li>
+            
+            <li><a href="#paragrafo" title="paragrafo">paragrafo</a></li>
+            
+            <li><a href="#secao" title="secao">secao</a></li>
+            
+            <li><a href="#subsecao" title="subsecao">subsecao</a></li>
+            
+            <li><a href="#textoFormatado" title="textoFormatado">textoFormatado</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="paragrafo">paragrafo:</a></p>
+      <img border="0" src="diagram/paragrafo.png" height="36" width="544" usemap="#paragrafo.map"><map name="paragrafo.map">
+         <area shape="rect" coords="29,1,123,33" href="#PARAGRAFO" title="PARAGRAFO">
+         <area shape="rect" coords="143,1,245,33" href="#ABRECHAVES" title="ABRECHAVES">
+         <area shape="rect" coords="265,1,385,33" href="#textoFormatado" title="textoFormatado">
+         <area shape="rect" coords="405,1,515,33" href="#FECHACHAVES" title="FECHACHAVES"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#paragrafo" title="paragrafo" shape="rect">paragrafo</a>
+         ::= <a href="#PARAGRAFO" title="PARAGRAFO" shape="rect">PARAGRAFO</a> <a href="#ABRECHAVES" title="ABRECHAVES" shape="rect">ABRECHAVES</a> <a href="#textoFormatado" title="textoFormatado" shape="rect">textoFormatado</a> <a href="#FECHACHAVES" title="FECHACHAVES" shape="rect">FECHACHAVES</a></pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#opcao" title="opcao">opcao</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="secao">secao:</a></p>
+      <img border="0" src="diagram/secao.png" height="36" width="512" usemap="#secao.map"><map name="secao.map">
+         <area shape="rect" coords="29,1,91,33" href="#SECAO" title="SECAO">
+         <area shape="rect" coords="111,1,213,33" href="#ABRECHAVES" title="ABRECHAVES">
+         <area shape="rect" coords="233,1,353,33" href="#textoFormatado" title="textoFormatado">
+         <area shape="rect" coords="373,1,483,33" href="#FECHACHAVES" title="FECHACHAVES"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#secao" title="secao" shape="rect">secao</a>    ::= <a href="#SECAO" title="SECAO" shape="rect">SECAO</a> <a href="#ABRECHAVES" title="ABRECHAVES" shape="rect">ABRECHAVES</a> <a href="#textoFormatado" title="textoFormatado" shape="rect">textoFormatado</a> <a href="#FECHACHAVES" title="FECHACHAVES" shape="rect">FECHACHAVES</a></pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#opcao" title="opcao">opcao</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="subsecao">subsecao:</a></p>
+      <img border="0" src="diagram/subsecao.png" height="36" width="538" usemap="#subsecao.map"><map name="subsecao.map">
+         <area shape="rect" coords="29,1,117,33" href="#SUBSECAO" title="SUBSECAO">
+         <area shape="rect" coords="137,1,239,33" href="#ABRECHAVES" title="ABRECHAVES">
+         <area shape="rect" coords="259,1,379,33" href="#textoFormatado" title="textoFormatado">
+         <area shape="rect" coords="399,1,509,33" href="#FECHACHAVES" title="FECHACHAVES"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#subsecao" title="subsecao" shape="rect">subsecao</a> ::= <a href="#SUBSECAO" title="SUBSECAO" shape="rect">SUBSECAO</a> <a href="#ABRECHAVES" title="ABRECHAVES" shape="rect">ABRECHAVES</a> <a href="#textoFormatado" title="textoFormatado" shape="rect">textoFormatado</a> <a href="#FECHACHAVES" title="FECHACHAVES" shape="rect">FECHACHAVES</a></pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#opcao" title="opcao">opcao</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="texto">texto:</a></p>
+      <img border="0" src="diagram/texto.png" height="56" width="172" usemap="#texto.map"><map name="texto.map">
+         <area shape="rect" coords="49,1,123,33" href="#PALAVRA" title="PALAVRA"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#texto" title="texto" shape="rect">texto</a>    ::= <a href="#PALAVRA" title="PALAVRA" shape="rect">PALAVRA</a>*</pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#textoFormatado" title="textoFormatado">textoFormatado</a></li>
+            
+            <li><a href="#titulo" title="titulo">titulo</a></li>
+            
+         </ul>
+         
+      </p><br><hr>
+      
+      <p>
+         
+         <table border="0" class="signature">
+            
+            <tr>
+               
+               <td style="width: 100%">&nbsp;</td>
+               
+               <td valign="top">
+                  
+                  <nobr class="signature">... generated by <a name="Railroad-Diagram-Generator" class="signature" title="http://www.bottlecaps.de/rr/ui" href="http://www.bottlecaps.de/rr/ui" target="_blank">Railroad Diagram Generator</a></nobr>
+                  
+               </td>
+               
+               <td><a name="Railroad-Diagram-Generator" title="http://www.bottlecaps.de/rr/ui" href="http://www.bottlecaps.de/rr/ui" target="_blank">
+                     <img border="0" src="diagram/rr-1.45.1338.png" height="16" width="16"></a></td>
+               
+            </tr>
+            
+         </table>
+         
+      </p>
+      
+   </body>
+</html>
