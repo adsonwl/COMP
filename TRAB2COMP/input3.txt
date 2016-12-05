@@ -1,0 +1,14 @@
+\begin{document}
+\title{UTFPR}
+\subsection{ERRORRR}
+\section{TESTE ERRO}
+\subsection{AEIOOO}
+\begin{itemize}
+\item Teste222
+\end{itemize}
+\begin{enumerate}
+\item Teste1
+\item Teste2
+\end{enumerate}
+\paragraph{a{\it e viadinho} asdsad  }
+\end{document}

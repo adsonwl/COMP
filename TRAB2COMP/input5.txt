@@ -1,0 +1,10 @@
+\begin{document}
+\paragraph{Um {\bf compilador} é um programa de computador (ou um grupo de programas) que, a partir de um código fonte escrito em uma linguagem compilada, cria um programa semanticamente equivalente, porém escrito em outra linguagem, código objeto.\paragraph{Em muitos domínios de aplicação a idéia de usar uma linguagem de alto nível rapidamente ganhou força. Por causa da funcionalidade de expansão apoiada por linguagens de programação recentes e a complexidade crescente de arquiteturas de computadores, os compiladores tornaram-se mais e mais complexos.} }
+\end{document}
+
+
+
+
+
+
+

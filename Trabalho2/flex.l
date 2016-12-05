@@ -2,11 +2,10 @@
 
 #include"bison.tab.h"
 
-int inlist=0, insec=1, subsec=0, aux=0, inchap=1;
+int insec=1, subsec=0, aux=0, inchap=1;
 %}
 
 pontuacao		    (\.|\,|\!|\?|\:|\;|"'")
-palavraEspecial	    ("\\"[a-zA-Z]+|"\\"[a-zA-Z*]+)
 caracterEspecial	(\_|"\&"|"\$"|"\#"|"@")
 simbolo	            ("+"|"-"|"="|"["|"]"|"("|")")
 palavra		        (({pontuacao}|{simbolo}|[a-zA-Z0-9])+)
@@ -20,12 +19,11 @@ comentario	        "%"
 "\\documentclass"		{return(CLASSEDODOCUMENTO);}
 "\\title"				{return(TITULODOCUMENTO);}
 {caracterEspecial}		{return(PALAVRA);}
-"\\begin{enumerate}"	{inlist++; return(INICIOLISTAE);}
-"\\end{enumerate}"		{inlist--; return(FIMLISTAE);}
-"\\begin{itemize}"		{inlist++; return(INICIOLISTAI);}
-"\\end{itemize}"		{ inlist--; return(FIMLISTAI);}
-"\\item"				{if(inlist>0) return(ITEM);else return(PALAVRAESPECIAL);}
-"\\item[]"			    {if(inlist>0) return(ITEM);else return(PALAVRAESPECIAL);}
+"\\begin{enumerate}"	{return(INICIOLISTAE);}
+"\\end{enumerate}"		{return(FIMLISTAE);}
+"\\begin{itemize}"		{return(INICIOLISTAI);}
+"\\end{itemize}"		{return(FIMLISTAI);}
+"\\item"				{return(ITEM);}
 "\\begin{document}"		{return(INICIODOCUMENTO);}
 "\\end{document}"		{return(FIMDOCUMENTO);}
 "\\paragraph"			{return(PARAGRAFO);}
@@ -41,6 +39,5 @@ comentario	        "%"
 "\\author"               {return(AUTOR);}
 {comentario}			{return(COMENTARIO); }
 {palavra}				{yylval.arr = strdup(yytext); return(PALAVRA); }
-{palavraEspecial}		{yytext=" ";return(PALAVRAESPECIAL);}
 .   					{}
 %%

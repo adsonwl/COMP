@@ -1,0 +1,27 @@
+\begin{document}
+\title{UTFPR}
+\section{COMPILADORES}
+\subsection{Flex}
+\paragraph{Flex (fast lexical analyzer generator) is a free {\bf software} alternative to lex.}
+\paragraph{It is a computer program that generates lexical analyzers (also known as "scanners" or "lexers")}
+\paragraph{It is frequently used with the free {\it Bison parser} generator.}
+\paragraph{Unlike Bison, flex is not part of the \underline{GNU Project } and is not released under the GNU Public License.}
+\begin{itemize}
+\item Time complexity
+\item Reentrancy
+\item Usage under non-Unix environments
+\item Using flex from other languages
+\end{itemize}
+\begin{enumerate}
+\item Lex
+\item Ragel
+\item Quex
+\item yacc
+\item GNU Bison
+\item Berkeley Yacc
+\end{enumerate}
+\paragraph{ {\bf flex++} is similar lexical scanner for C++ which is included as part of the flex package. The generated code does not depend on any runtime or external library except for a memory allocator (malloc or a user-supplied alternative) unless the input also depends on it. This can be useful in embedded and similar situations where traditional operating system or C runtime facilities may not be available. }
+\end{document}
+
+
+

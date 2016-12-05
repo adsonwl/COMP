@@ -19,7 +19,6 @@ FILE *novoHTML ;
 
 %start entrada
 
-%token PALAVRAESPECIAL
 %token ABRECHAVES FECHACHAVES PARAGRAFO SECAO CHAPTER
 %token SUBSECAO CLASSEDODOCUMENTO SUBLINHADO TITULODOCUMENTO AUTOR INICIODOCUMENTO
 %token FIMDOCUMENTO NEGRITO ITALICO COMENTARIO INICIOLISTAE FIMLISTAE
@@ -30,21 +29,16 @@ FILE *novoHTML ;
 
 entrada: {fprintf(novoHTML,"<html>\n<head>\n");} tipoDocumento {fprintf(novoHTML,"</head>\n");} INICIODOCUMENTO{fprintf(novoHTML,"<body>\n");}  corpo {fprintf(novoHTML,"</body>\n"); } FIMDOCUMENTO {fprintf(novoHTML,"</html> \n"); }
 	;
-                 
-ignorar: PALAVRAESPECIAL ABRECHAVES PALAVRA FECHACHAVES
-	|
-	;
 
-tipoDocumento: 
+tipoDocumento: classe 
 	| tipoDocumento autor
-	| tipoDocumento classe
 	| tipoDocumento titulo
 	;
     
-autor: AUTOR ABRECHAVES {fprintf(novoHTML,"\t<!-- (AUTOR)");} textoFormatado FECHACHAVES {fprintf(novoHTML,"-->\n");}
+autor: AUTOR ABRECHAVES {fprintf(novoHTML,"\t<!-- (AUTOR)");} texto FECHACHAVES {fprintf(novoHTML,"-->\n");}
 	;
 
-classe: CLASSEDODOCUMENTO ABRECHAVES {fprintf(novoHTML,"\t<!-- (CLASSE)");} textoFormatado FECHACHAVES {fprintf(novoHTML,"-->\n");}
+classe: CLASSEDODOCUMENTO ABRECHAVES {fprintf(novoHTML,"\t<!-- (CLASSE)");} texto FECHACHAVES {fprintf(novoHTML,"-->\n");}
 	;
 
 titulo: TITULODOCUMENTO ABRECHAVES {fprintf(novoHTML,"\t<title>"); } texto FECHACHAVES {fprintf(novoHTML,"</title>\n"); }
@@ -67,21 +61,20 @@ comentario: COMENTARIO {fprintf(novoHTML,"<!--");} textoFormatado {fprintf(novoH
 	;
 
 lista: INICIOLISTAE {fprintf(novoHTML,"<ol> "); } itemLista FIMLISTAE {fprintf(novoHTML,"</ol>\n"); }
-	|	INICIOLISTAI {fprintf(novoHTML,"<ul>"); } itemLista FIMLISTAI {fprintf(novoHTML,"</ul>\n"); }
+	| INICIOLISTAI {fprintf(novoHTML,"<ul>"); } itemLista FIMLISTAI {fprintf(novoHTML,"</ul>\n"); }
+	;
+
+itemLista: ITEM{fprintf(novoHTML,"<li> "); } textoFormatado {fprintf(novoHTML,"</li>\n"); } itemLista
 	| 
 	;
 
-itemLista: ITEM{fprintf(novoHTML,"<li> "); } lista textoFormatado {fprintf(novoHTML,"</li>\n"); } itemLista
-	|
-	;
-
-textoFormatado: NEGRITO ABRECHAVES {fprintf(novoHTML,"<b>");} textoFormatado FECHACHAVES {fprintf(novoHTML,"</b>\n");} textoFormatado
-	|    ITALICO ABRECHAVES {fprintf(novoHTML,"<i>");} textoFormatado FECHACHAVES {fprintf(novoHTML,"</i>\n");} textoFormatado
-	|    SUBLINHADO ABRECHAVES {fprintf(novoHTML,"<u>");} textoFormatado FECHACHAVES {fprintf(novoHTML,"</u>\n");} textoFormatado
-	|	ABRECHAVES NEGRITO {fprintf(novoHTML,"<b>");} textoFormatado FECHACHAVES {fprintf(novoHTML,"</b>\n");} textoFormatado
-	|	ABRECHAVES ITALICO {fprintf(novoHTML,"<i>");} textoFormatado FECHACHAVES {fprintf(novoHTML,"</i>\n");} textoFormatado
-	|	ABRECHAVES SUBLINHADO {fprintf(novoHTML,"<u>");} textoFormatado FECHACHAVES {fprintf(novoHTML,"</u>\n");} textoFormatado
-	|    ignorar texto ignorar 
+textoFormatado: NEGRITO ABRECHAVES {fprintf(novoHTML,"<b>");} textoFormatado FECHACHAVES {fprintf(novoHTML,"</b>\n");}
+	| ITALICO ABRECHAVES {fprintf(novoHTML,"<i>");} textoFormatado FECHACHAVES {fprintf(novoHTML,"</i>\n");}
+	| SUBLINHADO ABRECHAVES {fprintf(novoHTML,"<u>");} textoFormatado FECHACHAVES {fprintf(novoHTML,"</u>\n");}
+	| ABRECHAVES NEGRITO {fprintf(novoHTML,"<b>");} textoFormatado FECHACHAVES {fprintf(novoHTML,"</b>\n");}
+	| ABRECHAVES ITALICO {fprintf(novoHTML,"<i>");} textoFormatado FECHACHAVES {fprintf(novoHTML,"</i>\n");}
+	| ABRECHAVES SUBLINHADO {fprintf(novoHTML,"<u>");} textoFormatado FECHACHAVES {fprintf(novoHTML,"</u>\n");}
+	| texto 
 	;
 
 paragrafo: PARAGRAFO ABRECHAVES{fprintf(novoHTML,"<br>\n<b>");} textoFormatado FECHACHAVES {fprintf(novoHTML,"</b></br>\n");}
@@ -97,7 +90,7 @@ subsecao: SUBSECAO ABRECHAVES{fprintf(novoHTML,"<br><b>%d.%d ",yylval.valsec[0],
 	;
 
 texto: texto PALAVRA {fprintf(novoHTML," %s",$2);} 
-	|
+	| PALAVRA {fprintf(novoHTML," %s",$1);}
 	;
 	
 %%

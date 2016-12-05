@@ -1,0 +1,19 @@
+\begin{document}
+\title{UTFPR UTFPR}
+\section{COMPILADORES CD8900099}
+\subsection{INTRODUCAO}
+\paragraph{Um {\bf compilador} é um programa de computador (ou um grupo de programas) que, a partir de um código fonte escrito em uma linguagem compilada, cria um programa semanticamente equivalente, porém escrito em outra linguagem, código objeto.}
+\paragraph{ O nome "compilador" é usado principalmente para os programas que traduzem o código fonte de uma linguagem de programação de alto nível para uma linguagem de programação de baixo nível (por exemplo, Assembly ou código de máquina). }
+\begin{itemize}
+\item Teste
+\end{itemize}
+\begin{enumerate}
+\item História
+\item Características
+\item Fases da compilação
+\end{enumerate}
+\paragraph{Em muitos domínios de aplicação a idéia de usar uma linguagem de alto nível rapidamente ganhou força. Por causa da funcionalidade de expansão apoiada por linguagens de programação recentes e a complexidade crescente de arquiteturas de computadores, os compiladores tornaram-se mais e mais complexos.}
+\end{document}
+
+
+

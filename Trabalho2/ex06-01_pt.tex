@@ -1,0 +1,89 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Exemplo 17: listas
+% ultima atualizacao: 14/05/2004 por Sadao Massago
+% http:/www.dm.ufscar.br/~sadao
+%-------------------------------------------------------
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[brazil]{babel} % em portugues brasileiro
+\usepackage[latin1]{inputenc} % acentuação direta
+% PCTeX 4.0 ou anterior nao aceita a codificação T1. Comente, se for o caso.
+\usepackage[T1]{fontenc} % codificação da fonte em 8-bits
+
+% regra de hifenização das palavras nao acentuadas: nao requer \usepackage[T1]{fontenc}
+\hyphenation{li-vro tes-te cha-ve bi-blio-te-ca}
+% regra de hifenização das palavras acentuadas: requer \usepackage[T1]{fontenc}
+\hyphenation{co-men-tá-rio re-fe-r\^en-cia}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document} % inicio do documento
+
+Existem três listas básicas no \LaTeX{} que são: 
+enumerada, itenizada e descriptiva.
+
+Uma lista enumerada é especidicado pelo ambiente \texttt{enumerate}
+
+\begin{enumerate}
+  \item Este é o primeiro ítem da lista enumerada.
+  \item Agora, segundo ítem da lista enumerada
+  \item Terceiro ítem da lista enumerada
+\end{enumerate}
+
+Lista de ítens é especificado pelo ambiente \texttt{itemize}
+
+\begin{itemize}
+  \item Este é o primeiro ítem da lista de ítens.
+  \item Agora, segundo ítem da lista de ítens.
+  \item Terceiro ítem da lista de ítens.
+\end{itemize}
+
+O marcador de ítens pode ser configurado
+
+\begin{itemize}
+  \item Ítem com marcador padrão.
+  \item [$\ast$] Ítem com marcador personalizada.
+  \item [$\heartsuit$] Outro ítem com marcador personalizada.
+\end{itemize}
+
+
+Uma lista descrição é uma lista formado pela palavra e explicação do mesmo. 
+é definido pelo ambiente \texttt{description}.
+
+\begin{description}
+  \item [enumerada] Cada ítem recebe uma enumeração.
+  \item [itenizada] Em vez de enumeração, recebe um marcador.
+  \item [descrição] Descrição das palavras.
+\end{description}
+
+Uma lista pode ser combinada como segue:
+O marcador de ítens pode ser configurado
+
+\begin{enumerate}
+  \item Este ítem contém uma lista 
+    \begin{itemize}
+       \item primeiro item da sub lista.
+       \item segundo ítem da sublista.       
+    \end{itemize}
+  \item \begin{enumerate}
+            \item ítem 1 da primeira sub lista.
+            \item ítem 2 da segunda sub lista
+        \end{enumerate}
+\end{enumerate}
+
+As vezes, precisamos construir uma lista personalizada. 
+Para tanto, existe o que chamamos de lista generica, 
+definido pelo ambiente \texttt{list}. 
+Para criar ambiente do estilo de listas, que não seja padrão, 
+poderá usar este ambiente, mas deverá aprender a controlar.
+
+% primeiro argumento é rótulo (marcador de ítens)
+% segundo argumento é controle de espaçamentos
+\begin{list}{$\bullet$}{} 
+  \item primeiro ítem.
+  \item segundo ítem.
+  \item terceio ítem.
+\end{list}
+
+
+\end{document} % final do documento
+

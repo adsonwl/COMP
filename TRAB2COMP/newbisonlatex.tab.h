@@ -30,8 +30,8 @@
    This special exception was added by the Free Software Foundation in
    version 2.2 of Bison.  */
 
-#ifndef YY_YY_BISON_TAB_H_INCLUDED
-# define YY_YY_BISON_TAB_H_INCLUDED
+#ifndef YY_YY_NEWBISONLATEX_TAB_H_INCLUDED
+# define YY_YY_NEWBISONLATEX_TAB_H_INCLUDED
 /* Debug traces.  */
 #ifndef YYDEBUG
 # define YYDEBUG 0
@@ -45,28 +45,27 @@ extern int yydebug;
 # define YYTOKENTYPE
   enum yytokentype
   {
-    ABRECHAVES = 258,
-    FECHACHAVES = 259,
-    PARAGRAFO = 260,
-    SECAO = 261,
-    CHAPTER = 262,
-    SUBSECAO = 263,
-    CLASSEDODOCUMENTO = 264,
-    SUBLINHADO = 265,
-    TITULODOCUMENTO = 266,
-    AUTOR = 267,
-    INICIODOCUMENTO = 268,
-    FIMDOCUMENTO = 269,
-    NEGRITO = 270,
-    ITALICO = 271,
-    COMENTARIO = 272,
-    INICIOLISTAE = 273,
-    FIMLISTAE = 274,
-    ITEM = 275,
-    INICIOLISTAI = 276,
-    FIMLISTAI = 277,
-    BARRAINVERTIDA = 278,
-    PALAVRA = 279
+    ABRECHAVE = 258,
+    FECHACHAVE = 259,
+    BEGINDOCUMENT = 260,
+    ENDDOCUMENT = 261,
+    BEGINITEMIZE = 262,
+    ENDITEMIZE = 263,
+    BEGINENUMERATE = 264,
+    ENDENUMERATE = 265,
+    TITLE = 266,
+    SECTION = 267,
+    SUBSECTION = 268,
+    PARAGRAPH = 269,
+    BOLD = 270,
+    ITALIC = 271,
+    UNDERLINE = 272,
+    COMENTARIO = 273,
+    DIGITO = 274,
+    LETRA = 275,
+    ITEM = 276,
+    TEXTO = 277,
+    OFL = 278
   };
 #endif
 
@@ -75,12 +74,11 @@ extern int yydebug;
 
 union YYSTYPE
 {
-#line 15 "bison.y" /* yacc.c:1909  */
+#line 7 "newbisonlatex.y" /* yacc.c:1909  */
 
- 	char*	arr;
-	int	valsec[3];
+   char *literal;
 
-#line 84 "bison.tab.h" /* yacc.c:1909  */
+#line 82 "newbisonlatex.tab.h" /* yacc.c:1909  */
 };
 
 typedef union YYSTYPE YYSTYPE;
@@ -93,4 +91,4 @@ extern YYSTYPE yylval;
 
 int yyparse (void);
 
-#endif /* !YY_YY_BISON_TAB_H_INCLUDED  */
+#endif /* !YY_YY_NEWBISONLATEX_TAB_H_INCLUDED  */

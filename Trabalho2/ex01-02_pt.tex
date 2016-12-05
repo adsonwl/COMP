@@ -1,0 +1,115 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Exemplo 02: acentuacao no modo tex e caracteres especiais
+% ultima atualizacao: 14/05/2004 por Sadao Massago
+% http:/www.dm.ufscar.br/~sadao
+%---------------------------------------------------------- 
+\documentclass{article}
+
+\begin{document} % inicio do documento
+% Acentu��o no Modo tex
+% \ seguido de acento e caracter a ser acentuado
+% ex.: \`agua, voc\^e, etc. a letra a ser acentuada pode estar entre chaves
+% ex.: \`{a}gua, voc\^{e}, etc.
+% s�o aceitos:
+% \` -> crase
+% \' -> acento agudo
+% \^ -> acento circunfrexo
+% \" -> trema
+% \= -> barra
+Pode acontecer de precisar editar o c\'odigo fonte num sistema em que n\~ao tem 
+fontes acentuadas (para mostrar na tela), ou que o teclado n\~ao aceite a acentua\c c\~ao direta.
+Neste caso, dever\'a utilizar a acentua\c c\~ao no modo tex.
+Por exemplo, poder� produzir \=a.
+
+% i e j sem pingo eh produzido por \i e \j
+Para n\`ao ter problemas de pingo nas letras acentuadas, tem o i e j sem pingos, como estes:
+\i, \j
+
+Ex.: \'\i tem ou \'{\i}tem
+
+% Para colocar sedilha, usa-se o \c seguido de espa�o e c, ou seguido de {c}
+% ex.: ma\c c\~a, ma\c c\~{a}, ma\c{c}\~a, ma\c{c}\`{a} produzem mesmo efeito.
+
+
+% apostrofos e aspas:
+% apostrofo eh aberto com um ` e aspas, com `` (dois ` seguidos)
+% apostrofo eh fechado com ' e aspas com '' (dois ' seguidos)
+``Podemos escrever entre `aspas' e `apostrofos' sem problemas''.
+% Tome cuidado de n�o usar " para fechar o aspas. Sempre use '',
+% apesar de alguns tex antigo trata " como fechar aspas.
+% Outro cuidado: Se estiver usando teclado portugues, 
+% n�o confunda o acento agudo com apostrofos
+
+% No caso de aspas acima, o latex troca segu�ncia de caracteres dois ` ou dois ' 
+% por um novo caracter. Isto � denominado de "ligadura". Outros exemplos de
+% ligadura s�o:
+% -- que � travess�o, --- que e travessao longa, ?` e !` que s�o ponto de 
+% interroga��o e exclama��o de "ponta cabe�a"
+% Tamb�m existem outras ligaduras que ele usa e a gente nem nota, 
+% tal como trocar "fi" ou "ff" pela caracter "fi" e "ff" que 
+% s�o meio grudados 9como pouco espa�amento entre eles) para deixar 
+% o texto mais bonito. Este tipo de ligadura 
+% interno pode dar prblemas quando usa codificacao de fonte inadequada
+% (o que denomina "problema de ligadura em ...").
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+podemos escrever ?` e !` assim como -- e ---.
+
+% Caracteres especiais
+% seguints caracteres especiais sao especificados, colocando \ antes dele:
+% $, #, %, &, _, {, }
+Caracteres especiais podem ser escritos no texto:
+\$, \#, \%, \&, \_, \{, \}
+
+% caracteres que usam como acento n�o podem ser seguido esta regra.
+% entao o truque � acentuar sobre vazio especificado como {}
+% ex.: \`{}, \'{}, \~{}, \^
+
+Acentos sobre vazio: \`{}, \'{}, \~{}, \^{}
+
+Caracteres n\~ao especiais (apesar de acento): " (n\~ao use este para fechar aspas).
+
+% Note que \\ � reservado para linebreak e 
+% \ seguido de espaco e reservado para espaco extra.
+% Assim, nao pode seguir a regra acima. 
+% dever� escrever $\backslash$ ou \textbackslash 
+
+Podemos escrever $\backslash$  ou \textbackslash
+
+% o sinal de simetria pode ser usado como tilde
+
+um tilde que n\~ao fica centrada (na altura): $\sim$
+
+% um espa�o estra inserido pelo \ seguido de espa�o pode ser 
+% dividido (metade na linha e resto na outra linha)
+% um espa�o inserido pelo ~ n�o pode ser dividido
+
+% veja a p�gina~1 
+% 1 n�o pode ser separada de p�gina, apesar de ter espa�os
+% cuidado para n�o colocar espa�o junto com ~ como
+% p�gina~ 1
+% ou
+% p�gina ~1
+% pois perde o efeito de manter juntas
+
+O espa�o extra que pode ser dividido pode ser inserido com contra barra seguido de espa\c co como abaixo:
+
+um \ \ \ \ \ espa�o \ \ \ \ \ extra \ \ \ \ entre \ \ \ \ palavras.
+
+% Um c�digo pode ser inserido no meio do texto usando \verb
+% \verb+[texto]+
+% onde + est� indicando o comeco e fim do bloco. Ele pode ser trocado pelo 
+% outro par de caracteres que n�o seja *, conforme a necessidade
+
+\
+ 
+Nota: O logotipo \tex, \latex{} e \latexe{} tamb\'em podem ser inseridos no documento, mas lembre-se que
+os comandos do \tex{} \'e sens\'\i vel ao mai\'usculo/min\'usculo.
+
+Nota: Em geral, os espa\c cos depois do comando s\~ao ignorados.
+Para inserir espa\c cos depois do comando, basta colocar par de chaves ap\'os o comando.
+Por exemplo, para produzir ``\latex{} produz...'', 
+escreva \verb*+\latex{} produz...+, mas n\~ao utilize ``+\ +'' nem ``$\sim$'' para inserir o espa\c co, 
+pois ter\'a espa\c co indesejado quando ele cair no final da linha.
+
+\end{document} % final do documento

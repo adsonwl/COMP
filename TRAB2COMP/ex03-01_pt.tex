@@ -1,0 +1,328 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Exemplo 07: fontes: familia, serie, forma, e tamanho
+% ultima atualizacao: 14/05/2004 por Sadao Massago
+% http:/www.dm.ufscar.br/~sadao
+%----------------------------------------------------
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[brazil]{babel} % em portugues brasileiro
+\usepackage[latin1]{inputenc} % acentuação direta
+% T1 não é aceito no PCTeX 4.0 ou anterior. Neste caso, comente
+\usepackage[T1]{fontenc} % codificação da fonte em 8-bits
+% regra de hifenização das palavras nao acentuadas: nao requer \usepackage[T1]{fontenc}
+\hyphenation{li-vro tes-te cha-ve bi-blio-te-ca}
+% regra de hifenização das palavras acentuadas: requer \usepackage[T1]{fontenc}
+\hyphenation{co-men-tá-rio re-fe-rên-cia}
+
+\sloppy % preferencia a underflow (do que overflow)
+
+\begin{document} % inicio do documento
+
+No \LaTeX, as fontes é especificado pela família ou categoria 
+(como ele é desenhado), serie ou peso (espessura da letra - negrito ou não), 
+e a forma (formato da letra como itálico e não itálico).
+
+\
+
+{\bfseries comandos de fontes}
+O \LaTeX{} dispõe de dois tipos de comandos para especificação de fontes.
+Um deles é a especificação num trecho que é da forma
+\verb+\text??{texto}+ onde \verb+??+ é a seqüência de duas letras
+e \verb+texto+ é o trecho do texto com tal especificação da fonte.
+
+Por exemplo, \verb+\textbf{negrito}+ produz \textbf{negrito}.
+
+Outro comando é a especificação da seleção de fontes que pode afetar 
+o documento todo (ou todo ambiente, se for colocado dentro do ambiente).
+Por exemplo, \verb+\bfseries+ troca para negrito, 
+até que apareça algum comando desfazendo esta ação
+(ou \verb+\end{}+).
+
+Ex.: \bfseries o texto ficará em negrito até que apareça comando como
+\verb+\normalfont+. 
+\normalfont Agora, a fonte retornou ao normal.
+
+O comando de seleção de fontes podem ser usados para mudança apenas de 
+um trecho. Para tanto, basta colocar entre chaves, como em
+
+Ex.: {\bfseries texto em negrito somente dentro da chave}. 
+Aqui, a fonte voltou ao normal.
+
+Um cuidado especial no caso do uso acima é que o comando de seleção 
+de fontes não leva em conta o ajuste de espaços necessário para que 
+a mudança fique suave. Por exemplo, última letra da fonte itálico 
+seguido de fonte reto pode ficar grudado demais. No exemplo acima, 
+pode ser usado por terminar a frase com ponto final, 
+no ato da troca de fontes.
+
+Quando precisa especificar um trecho grande de paragrafos, 
+é recomendado que use o comando de mudança de fontes 
+na forma de ambientes, isto é, colocando em
+\verb+\begin{}+ e \verb+\end{}+ como a seguir, 
+recomendado quando for especificação de um parágrafo por deixar 
+claro onde começa e onde termina a especificação.
+
+Ex.:
+\begin{bfseries}
+    Este trecho ficará todo em negrito.
+\end{bfseries}
+
+{\bfseries family (familia):}
+
+O comando \verb|\rmfamily| seleciona a fonte com serifa 
+(enfeite nas pontas, padrão para maioria dos casos) 
+indicadas para corpo do documento. 
+comando para trecho do texto para esta família é \verb+\textrm{texto}+.
+
+Ex.: \textrm{fonte Romano} ou {\rmfamily Fonte com serifa}.
+
+O comando \verb|\sffamily| seleciona a fonte sem serifa 
+(sem enfeite nas pontas) indicadas para títulos, 
+transparências, cartazes, etc. 
+No caso da classe \texttt{amsart} e \texttt{amsbook}, usa esta fonte 
+nos títulos, mas \texttt{article}, \texttt{book}, \texttt{report}, etc 
+não usa esta família.
+O comando para trecho de texto é \verb+\textsf+.
+
+Ex.: \textsf{Sans Serif} ou {\sffamily Sem Serifa}.
+
+O comando \verb|\ttfamily| seleciona a fonte monoespaçado (sem serifa, 
+com espaçamento constante) usado para escrever código fonte de programa,
+nome de arquivos, endereço de internet, etc que deve ser lido no pé da letra.
+O comando \verb|\verb| usa esta fonte.
+O comando para trecho de texto é \verb+\texttt+.
+
+Ex.: \texttt{Typewriter} ou {\ttfamily fonte de máquina de escrever}.
+
+\
+
+{\bfseries series (peso):}
+
+Para destacar a parte do documento, tal como título, 
+costuma usar a fonte em negrito.
+
+O comando \verb|\mdseries| seleciona a espessura média 
+(normal - padrão para maioria dos casos).
+O comando para trecho de texto é \verb+\textmd+.
+
+
+Ex.: \textmd{Peso Normal} ou {\mdseries espessura normal}.
+
+
+O comando \verb|\bfseries| seleciona o negrito (mais grosso).
+O comando para trecho de texto é \verb+\textbf+.
+
+
+Ex.: \textbf{Negrito} ou {\bfseries espessura grossa}.
+
+\
+
+{\bfseries shape (forma):}
+
+O comando \verb|\upshape| seleciona a letra reta (padrão para maioria dos casos).
+O comando para trecho de texto é \verb+\textup+.
+
+Ex.: \textup{Reto} ou {\upshape forma reta}.
+
+O comando \verb|\itshape| seleciona a letra itálico (inclinado e arredondado).
+O comando para trecho de texto é \verb+\textit+.
+
+Ex.: \textit{Itálico} ou {\itshape fonte arredondado}.
+
+Ainda tem mais duas formas que requer cuidado no uso que são:
+
+\verb|\slshape| que seleciona a letra inclinada, mas não arredondada
+(pode ser usado no cabeçalho, etc, mas evite de usar no meio do texto)
+O comando para trecho de texto é \verb+\textsl+.
+
+Ex.: \textsl{Inclinado} ou {\slshape não é itálico}.
+
+O comando \verb|\scshape| seleciona a letra maiuscula de tamanho variado.
+O comando para trecho de texto é \verb+\textsc+.
+
+Ex.: \textsc{Small Caps} ou {\scshape Não está em maiúsculo}.
+
+{\bfseries fonte normal e texto em ênfase:}
+
+Quando quer voltar a configuração padrão do documento, 
+comando \verb|\normalfont| que restaura a configuração do \verb|family|, \verb|series| e \verb|shape|. 
+O comando para trecho de texto é \verb+\textnormal+.
+
+Ex.:
+{\bfseries \itshape Este trecho é negrito itálico, 
+mas \textnormal{aqui voltou ao normal} e 
+agora continua com negrito itálico}
+
+ou 
+
+{\bfseries \itshape Este trecho é negrito itálico, mas pode voltar 
+ao normal.
+{\normalfont Aqui voltou ao normal}, 
+mas continua com negrito itálico}
+ 
+
+Para dar ênfase uma parte do texto, mas não para destacar, 
+costuma alterar entre fonte reto e itálico.
+O comando para seleção do enfatizado é \verb|\em| e para trecho do texto 
+é \verb+\emph+ (não é \verb+textem+)
+
+O uso de \verb+\textit{}+ (ou \verb|\itshape|) é indicado somente 
+para casos em que ele deve ficar em itálico, independente do contexto, 
+tal como enunciado do teorema, mas para enfatizar 
+(como termo que está sendo definido), deverá usar o \verb+emph+ 
+(ou \verb|\em|).
+
+Ex.: 
+\begin{em}
+  As veses, é preciso criar \emph{ênfase} dentro do texto já em ênfase. 
+\end{em}.
+
+\
+
+{\bfseries tamanho:}
+
+Comando para definir tamanho, de menor para maior são:
+
+\verb|\tiny| {\tiny tiny}
+
+\verb|\scriptsize| {\scriptsize scriptsize}
+
+\verb|\footnotesize| {\footnotesize footnotesize}
+
+\verb|\normalsize| {\normalsize normalsize}
+
+\verb|\large| {\large large}
+
+\verb|\Large| {\Large Large}
+
+\verb|\LARGE| {\LARGE LARGE}
+
+\verb|\huge| {\huge huge}
+
+\verb|\Huge| {\Huge Huge}
+
+Estes comandos devem ser usados, protegendo com chaves como em
+
+Ex.: {\Large fonte grande}
+
+Quando for um paragrafo inteiro, é recomendável que use o
+\verb+\begin+ e \verb+\end+ como em
+
+\begin{small}
+    Está com a letra pequena.
+\end{small}
+
+Note que, quando a letra fica pequeno demais devido ao tamanho base 
+do documento, \texttt{tiny} e \texttt{scriptsize} pode 
+ficar do mesmo tamanho.
+
+\
+
+{\bfseries Cuidado quando especifica a fonte no meio do texto:}
+
+Para usar fonte diferente no meio do texto, requer cuidados especiais. 
+Por exemplo, uma fonte reto seguido de inclinado requer espaço extra entre 
+eles para evitar que fiquem muito próximos.
+O comando de seleção de fontes (como o \verb+{\itshape texto}+)
+não verifica este tipo de comportamento.
+
+Para resolver este tipo de problemas, existem os comandos \verb|\text??{}| 
+onde \verb|??| é a primeiras duas letras usadas no comando da seleção das 
+fontes: familia, peso ou forma.
+Assim, no meio do texto, sempre opte pelo grupo \verb+\text??+ em vez do comando de seleção de fontes.
+
+Os seguintes comandos especificam o texto na fonte indicada que são:
+\verb|textrm{texto}|, \verb|\textsf{texto}|, \verb|\texttt{texto}|, \verb|\textmd{texto}|,
+\verb|\textbf{texto}|, \verb|\textup{texto}|, \verb|\textit{texto}|, \verb|\textsl{texto}|,
+\verb|\textsc{texto}|, \verb|\textnormal{texto}|, \verb|\emph{texto}|.
+
+O \verb|textnormal| (corresponde a \verb|\normalfont|) e
+ \verb|\emph{}| (corresponde a \verb|\em|) 
+são as excessões, mas todos outros usam como terminação, 
+duas letras inicias usadas na especificação correspondente.
+
+Portanto, qualquer especificação de um trecho de texto dentro do paragrafo, 
+use o comando de especificação do trecho, e não a seleção da fonte.
+
+\
+
+{\bfseries Bloco de parâgrafos:}
+
+Para especificar um bloco de texto consideravelmente grande, 
+usa-se a forma de ambiente correspondente 
+as formas declarativas. 
+Por exemplo, o texto compreendidas entre 
+\verb|\begin{itshape}| e \verb|\end{itshape}| ficam em itálico.
+ Todos comandos de seleção de fontes (que não sejam \verb+\text??+ ou \verb+emph+), assim como especificações do tamanho aceitam a 
+ forma de ambientes.
+
+\
+
+{\bfseries Combinação:}
+
+Primeiro, observe que as especificações das fontes podem ser combinadas, 
+desde que tais combinações existam.
+Ex.: 
+\begin{itshape} 
+  Está em itálico \textbf{negrito} ou \texttt{typewriter} 
+\end{itshape}
+
+\
+
+Quando a especificação da fonte for efetuado dentro de um bloco 
+(delimitado pelos chaves) ou dentro do ambiente 
+(delimitado por algum \verb|\begin{ambiente}| e \verb|\end{ambiente}|, 
+ele não afeta o que está fora dele. 
+O caso do ambiente funciona no caso mais geral que a seleção de fontes
+e tamanho de fontes. 
+
+\textbf{Nota:} O ambiente (com \verb+\begin{}+ e \verb+\end{}+
+protege o resto do documento para que possa efetuar quaisquer 
+alteração de configuração, incluindo alinhamento de textos 
+(mesmo dentro do ambiente, as configurações globais tal como 
+configuração das margens afeta todo documento). 
+O caso do bloco (dentro de chaves) é o caso particular aceito
+somente para os comandos de seleção de fontes e tamanho de fontes.
+
+
+\begin{flushright} 
+% O ambiente protege mudança de configurações, não somente das fontes.
+  O texto está alinhado a direita.
+  \center O \verb+\center+ está sendo usando sem o \verb|\begin{}|, \verb|\end{}| 
+  por estar dentro do ambiente.
+  
+  Este e outra configurações serão restauradas no \verb|\end|.
+
+  \flushleft \bfseries \Large negrito grande
+\end{flushright}
+
+Devido a este comportamento, as vezes usa o comando de mudança de fontes, colocando dentro do bloco delimitado pelas chaves.
+Ex.: {\ttfamily typewriter} dentro do bloco.
+
+
+{\bfseries Nota para usuário do \LaTeX{} antigo:}
+O \LaTeXe \ dispõe do comando de especificação de fontes com duas letras, 
+usadas no \LaTeX{} $2.09$ devido a compatibilidade, 
+mas eles não podem ser combinados, por ter 
+combinação pré-definida: \\
+ \texttt{rm} é romano reto de peso normal, \\
+ \texttt{tt} é monoespaçado reto de peso normal, \\
+ \texttt{sf} é sans serif reto de peso normal, \\
+ \texttt{bf} é romano reto negrito, \\
+ \texttt{it} é romano itálico de peso normal, \\
+ \texttt{sc} é ``small caps'' romano de peso normal, \\
+ 
+Portanto, o uso de comandos de duas letras na especificação das fontes 
+devem ser usados somente quando especificações não precisam ser combinados.
+Além disso, todos eles são seleção de fontes e não a especificação do trecho.
+Assim, deve evitar de usar no meio do texto.
+Caso estiver usando por algum motivo, o \verb+\it+ requer 
+\verb+\/+ (correção do itálico) no final como em
+
+Um {\it espaço vetorial\/} é o conjunto ...
+
+Se a fonte alterar dentro do itálico para romano, também pode ocurrer
+mesmo problema. Assim, a recomendação é sempre usar o \verb+\text??+ e
+\verb+\emph+ quando a especificação afeta no meio do texto.
+
+\end{document} % final do documento

@@ -1,0 +1,49 @@
+entrada -> tipoDocumento INICIODOCUMENTO corpo FIMDOCUMENTO.
+
+tipoDocumento -> classe.
+tipoDocumento -> tipoDocumento autor.
+tipoDocumento -> tipoDocumento titulo.
+
+autor -> AUTOR ABRECHAVES texto FECHACHAVES.
+
+classe -> CLASSEDODOCUMENTO ABRECHAVES texto FECHACHAVES.
+
+titulo -> TITULODOCUMENTO ABRECHAVES texto FECHACHAVES.
+
+corpo -> corpo opcao.
+corpo -> opcao.
+
+opcao -> textoFormatado.
+opcao -> lista.
+opcao -> paragrafo.
+opcao -> capitulo.
+opcao -> secao.
+opcao -> subsecao.
+opcao -> comentario.
+
+comentario -> COMENTARIO textoFormatado.
+
+lista -> INICIOLISTAE itemLista FIMLISTAE.
+lista -> INICIOLISTAI itemLista FIMLISTAI.
+
+itemLista -> ITEM textoFormatado itemLista.
+itemLista -> .
+
+textoFormatado -> NEGRITO ABRECHAVES textoFormatado FECHACHAVES.
+textoFormatado -> ITALICO ABRECHAVES textoFormatado FECHACHAVES.
+textoFormatado -> SUBLINHADO ABRECHAVES textoFormatado FECHACHAVES.
+textoFormatado -> ABRECHAVES NEGRITO textoFormatado FECHACHAVES.
+textoFormatado -> ABRECHAVES ITALICO textoFormatado FECHACHAVES.
+textoFormatado -> ABRECHAVES SUBLINHADO textoFormatado FECHACHAVES.
+textoFormatado -> texto.
+
+paragrafo -> PARAGRAFO ABRECHAVES textoFormatado FECHACHAVES.
+
+capitulo -> CHAPTER ABRECHAVES textoFormatado FECHACHAVES.
+
+secao -> SECAO ABRECHAVES textoFormatado FECHACHAVES.
+
+subsecao -> SUBSECAO ABRECHAVES textoFormatado FECHACHAVES.
+
+texto -> texto PALAVRA.
+texto -> PALAVRA.
